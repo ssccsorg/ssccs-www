@@ -47,10 +47,15 @@ export default function Home() {
       </p>
 
       <h2>Contact</h2>
-      <p>
-        Inquiries: <a href="mailto:contact@ssccs.org" style={{ color: '#000', textDecoration: 'underline' }}>contact@ssccs.org</a>
-      </p>
+      <ul>
+  <li>
+        <a href="mailto:contact@ssccs.org" style={{ color: '#000', textDecoration: 'underline' }}>contact@ssccs.org</a>
+  </li>
+  <li>
+            <a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer" style={{ color: '#000', textDecoration: 'underline' }}>github</a> (we will also support <a href="https://radicle.xyz/">decentralized git</a>)
 
+  </li>
+  </ul>
       <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
 
       <footer>
