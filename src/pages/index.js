@@ -1,7 +1,7 @@
 export default function Home() {
   
   return (
-    <main style={{ maxWidth: '800px', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6', fontFamily: 'serif' }}>
+    <main style={{ maxWidth: '900px', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6', fontFamily: 'serif' }}>
       <h1>Schema Segment Composition Computing System</h1>
 
       <p>
