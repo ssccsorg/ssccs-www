@@ -2,10 +2,10 @@ export default function Home() {
   
   return (
     <main style={{ maxWidth: '800px', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6', fontFamily: 'serif' }}>
-      <h1>SSCCS – Schema Segment Composition Computing System</h1>
+      <h1>Schema Segment Composition Computing System</h1>
 
       <p>
-        SSCCS is a non-profit research initiative introducing a computational paradigm and software compiler infrastructure centered on observation rather than procedural execution. By shifting away from traditional instruction-based models, SSCCS provides a software infrastructure designed for deterministic, scalable computation on contemporary systems, while establishing a roadmap for future hardware architectures.
+        SSCCS(Schema Segment Composition Computing System) is a non-profit research initiative introducing a computational paradigm and software compiler infrastructure centered on observation rather than procedural execution. By shifting away from traditional instruction-based models, SSCCS provides a software infrastructure designed for deterministic, scalable computation on contemporary systems, while establishing a roadmap for future hardware architectures.
       </p>
 
       <h2>Project Overview</h2>
@@ -43,16 +43,16 @@ export default function Home() {
         SSCCS operates under a draft statute, pending formal notarization as a German gUG. The document is provided below for transparency. Project descriptions and contact information are shared for collaboration and support purposes.
       </p>
       <p style={{ marginTop: '20px' }}>
-        <a href="/satzung_draft_v1.pdf" target="_blank" rel="noopener noreferrer" style={{ color: '#000', textDecoration: 'underline' }}>SSCCS Draft Statute (PDF)</a>
+        <a href="/satzung_draft_v1.pdf" target="_blank" rel="noopener noreferrer">SSCCS Draft Statute (PDF)</a>
       </p>
 
       <h2>Contact</h2>
       <ul>
   <li>
-        <a href="mailto:contact@ssccs.org" style={{ color: '#000', textDecoration: 'underline' }}>contact@ssccs.org</a>
+        <a href="mailto:contact@ssccs.org">contact@ssccs.org</a>
   </li>
   <li>
-            <a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer" style={{ color: '#000', textDecoration: 'underline' }}>github</a> (we will also support <a href="https://radicle.xyz/">decentralized git</a>)
+            <a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">github</a> (we will also support <a href="https://radicle.xyz/">decentralized git</a>)
 
   </li>
   </ul>

@@ -2,7 +2,8 @@
   --ifm-font-family-base: "Georgia", "Palatino", "Times", "Roman", serif;
 }
 
-.markdown a {
+a {
+  color: #000;
   text-decoration: underline;
 }
 
