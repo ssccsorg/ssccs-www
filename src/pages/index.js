@@ -5,7 +5,7 @@ export default function Home() {
       <h1>SSCCS – Schema Segment Composition Computing System</h1>
 
       <p>
-        SSCCS is a German non-profit research initiative (gUG i.G.) introducing a computational paradigm centered on observation rather than procedural execution. By shifting away from traditional instruction-based models, SSCCS provides a software infrastructure designed for deterministic, scalable computation on contemporary systems, while establishing a roadmap for future hardware architectures.
+        SSCCS is a non-profit research initiative (gUG i.G.) introducing a computational paradigm centered on observation rather than procedural execution. By shifting away from traditional instruction-based models, SSCCS provides a software infrastructure designed for deterministic, scalable computation on contemporary systems, while establishing a roadmap for future hardware architectures.
       </p>
 
       <h2>Project Overview</h2>
@@ -54,7 +54,7 @@ export default function Home() {
       <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
 
       <footer>
-        SSCCS gUG (in Gründung) – German non-profit research initiative
+        SSCCS gUG (in Gründung) – Non-profit research initiative
       </footer>
     </main>
   );
