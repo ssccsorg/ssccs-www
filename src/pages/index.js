@@ -5,42 +5,40 @@ export default function Home() {
       <h1>Schema Segment Composition Computing System</h1>
 
       <p>
-        SSCCS(Schema Segment Composition Computing System) is a non-profit research initiative introducing a computational paradigm and software compiler infrastructure centered on observation rather than procedural execution. By redefining computation as a transparent, traceable trajectory of immutable structures, we ensure that logic is no longer a "black box" but an Intellectual Public Commons accessible and verifiable by all. Through its inherent energy efficiency and high-performance interpretability, SSCCS serves as a sustainable foundation for the next generation of social infrastructures, ensuring that complex computational systems remain accountable and beneficial to the public interest.
+        SSCCS is a non-profit research initiative pioneering a computational paradigm and compiler infrastructure centered on observation over procedural execution. By framing computation as a traceable projection of immutable segments within a defined scheme, logic ceases to be a "black box" and becomes part of an Intellectual Public Commons—transparent, verifiable, and accessible to all. Through its intrinsic energy efficiency and high-performance interpretability, SSCCS lays the foundation for sustainable, accountable computational infrastructures that serve the public interest.
       </p>
 
-     <h2>Project Overview</h2>
-<p>
-  The SSCCS framework operates through the composition of immutable structural units. Unlike traditional computing which "draws" results through sequential, instruction-based paths, computation in SSCCS emerges as a simultaneous projection. By utilizing a topological mask (Schema) to define the logical arrangement of data, the system produces resolved projections without altering the underlying blueprints. This shift—from procedural "writing" to structural observation—ensures that execution remains consistent, reproducible, and inherently interpretable across any scale.
-</p>
+      <h2>Project Overview</h2>
+      <p>
+        The SSCCS framework operates through the composition of immutable segments. Unlike traditional computing, which unfolds results sequentially via instruction-based flows, SSCCS computation emerges as a simultaneous resolution across a spatial topology. A defined scheme encodes the physical layout of segments, determining the execution path, while computation consists of observing their dynamic composition. This transition—from procedural "writing" to structural observation—ensures execution remains consistent, reproducible, and inherently interpretable at any scale.
+      </p>
 
-<p>
-  The current implementation provides a practical compiler and runtime environment engineered for industrial-scale utility. By moving away from the paradigm of step-by-step state mutation to a lithographic-style projection, the system decouples execution logic from mutable state. This enables inherent parallelism and secure isolation, allowing complex computations to occur independently and securely within cryptographically enforced boundaries. The final output is not a product of hidden procedural motion, but a visible, auditable manifestation of a fixed architectural structure.
-</p>
-      
+      <p>
+        The current implementation provides a practical compiler and runtime environment optimized for industrial-scale utility. By shifting from step-by-step state mutation to a lithographic-style projection, execution logic is decoupled from mutable state. This enables inherent parallelism and secure isolation, allowing complex computations to occur independently and within cryptographically enforced boundaries. The final output is not the product of hidden procedural motion but a visible, auditable manifestation of fixed architectural structures.
+      </p>
 
       <h2>Values and Impact</h2>
       <ul>
         <li>
-          Energy-Efficient and Scalable Computation: Computation is activated only at defined points of resolution, reducing unnecessary processing while enabling natural parallelism and efficient scaling for AI-driven and distributed workloads.
+          Energy-Efficient and Scalable Computation: Computation activates only at defined points of resolution, reducing unnecessary processing while enabling natural parallelism and efficient scaling for AI-driven and distributed workloads.
         </li>
         <li>
-          Digital Sovereignty and Standardization: A language-agnostic, open-source architectural framework that reduces dependency on proprietary stacks. It empowers public technological sovereignty by establishing interoperable standards for both industrial and research ecosystems.
+          Digital Sovereignty and Standardization: A language-agnostic, open-source architectural framework that minimizes reliance on proprietary stacks. SSCCS empowers public technological sovereignty and establishes interoperable standards across industrial and research ecosystems.
         </li>
         <li>
-          Interpretability and Post-Verifiability: Unlike traditional procedural systems dependent on mutable states, SSCCS preserves the interaction trajectory of immutable units. This ensures that every computational result is auditable and traceable, providing a "gold standard" for high-trust sectors such as judiciary, finance, and medicine.
+          Interpretability and Post-Verifiability: Immutable segments preserve the interaction trajectory, ensuring that every computational result is auditable and traceable—a "gold standard" for high-trust sectors such as judiciary, finance, and medicine.
         </li>
         <li>
-          Sustainable Social Infrastructure: By combining high-performance interpretability with extreme energy efficiency, SSCCS provides a foundation for sustainable social systems. It enables complex public decision-making processes—from urban planning to resource allocation—to be executed with minimal carbon footprint while maintaining total transparency, ensuring technology serves the long-term interests of society.
+          Sustainable Social Infrastructure: By combining extreme energy efficiency with high-performance interpretability, SSCCS supports complex public decision-making processes—from urban planning to resource allocation—while maintaining total transparency and minimal environmental footprint.
         </li>
         <li>
-          Cryptographic Security and Isolation: Execution is constrained within isolated environments governed by binary-level policies, supporting secure, auditable, and policy-compliant computation.
+          Cryptographic Security and Isolation: Execution occurs within isolated environments governed by binary-level policies, ensuring secure, auditable, and policy-compliant computation.
         </li>
       </ul>
-      
 
       <h2>Support and Collaboration</h2>
       <p>
-        We are seeking institutional partnerships to support the transition from a draft statute to an operational research organization. We welcome inquiries regarding software infrastructure development, academic partnerships, and strategic advisory for non-profit deep-tech initiatives.
+        We seek institutional partnerships to transition from a draft statute to a fully operational research organization. Inquiries regarding software infrastructure development, academic collaborations, and strategic advisory for non-profit deep-tech initiatives are welcome.
       </p>
 
       <h2>Legal Status</h2>
@@ -57,7 +55,7 @@ export default function Home() {
           <a href="mailto:contact@ssccs.org">contact@ssccs.org</a>
         </li>
         <li>
-          <a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">github</a> (we will also support <a href="https://radicle.xyz/">decentralized git</a>)
+          <a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">GitHub</a> (supporting <a href="https://radicle.xyz/">decentralized git</a>)
         </li>
       </ul>
       <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
