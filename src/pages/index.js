@@ -1,50 +1,44 @@
 export default function Home() {
   return (
     <main style={{ maxWidth: '900px', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6', fontFamily: 'serif' }}>
-      <h1>Schema Segment Composition Computing System</h1>
+      <h1>Schema–Segment Composition Computing System</h1>
 
       <p>
-        SSCCS is a non‑profit research initiative redefining computation itself. Moving beyond the von Neumann model of step‑by‑step execution, we pioneer an observation‑centric paradigm where computation is the deterministic projection of immutable structures under dynamic constraints. Logic ceases to be a "black box" and becomes part of an Intellectual Public Commons—transparent, verifiable, and accessible to all. Through its intrinsic energy efficiency, inherent parallelism, and cryptographic verifiability, SSCCS lays the foundation for sustainable, accountable computational infrastructures that serve the public interest.
+        SSCCS is a non‑profit research initiative that redefines computation as the observation of structured potential under dynamic constraints. Moving beyond the von Neumann model, it frames computation as the deterministic Projection of immutable Segments within geometric Schemes, with Fields encoding dynamic admissibility. Logic becomes transparent and verifiable, forming an Intellectual Public Commons accessible to all. This structure-centric approach naturally reduces data movement, enables inherent parallelism, and ensures secure, auditable execution.
       </p>
 
       <h2>Project Overview</h2>
       <p>
-        SSCCS operates through the composition of immutable Segments—atomic points in a multi‑dimensional coordinate space, each bearing a cryptographic identity. A Scheme defines their geometry and admissible relations. The only mutable layer is the Field, which holds dynamic constraints. Computation occurs solely through Observation: when structure and field together create an instability, a deterministic Projection is revealed—the result.
-      </p>
-      <p>
-        Unlike traditional instruction‑based flows, SSCCS computation emerges as a simultaneous resolution across a spatial topology. The scheme encodes the execution path; computation is the act of observing the structure. This shift—from procedural "writing" to structural observation—ensures execution is consistent, reproducible, and inherently interpretable at any scale.
-      </p>
-      <p>
-        The current implementation provides a practical compiler and runtime environment optimized for industrial‑scale utility. By decoupling logic from mutable state, we enable inherent parallelism and secure isolation within cryptographically enforced boundaries. The final output is not a product of hidden procedural motion but a visible, auditable manifestation of fixed architectural structures.
+        Computation occurs solely through Observation: when the structure defined by Schemes and the dynamic constraints in Fields create an admissible configuration, a deterministic Projection is produced. Segments remain immutable and stationary, while the Field tracks the evolving constraints. The compiler maps Schemes to hardware, preserving locality and enabling implicit parallelism. The process ensures reproducible, interpretable outcomes at any scale.
       </p>
 
-      <h2>Values and Impact</h2>
+      <h2>Core Values and Impact</h2>
       <ul>
         <li>
-          Energy‑Efficient and Scalable Computation: Data remains stationary; only projections are communicated. This eliminates most data‑movement overhead, concentrating energy at the moment of observation and enabling natural parallelism for AI and distributed workloads.
+          <strong>Energy-efficient and parallel computation:</strong> Data remains stationary; only Projections move. Energy is concentrated at the moment of observation, supporting scalable AI and distributed workloads.
         </li>
         <li>
-          Digital Sovereignty and Standardization: A language‑agnostic, open‑source architectural framework minimizes reliance on proprietary stacks. SSCCS empowers public technological sovereignty and establishes interoperable standards across industrial and research ecosystems.
+          <strong>Public accessibility and standardization:</strong> Open, language-agnostic specifications promote transparency and technological sovereignty. The open format preserves verifiability and enables long-term, interoperable standards.
         </li>
         <li>
-          Interpretability and Post‑Verifiability: Immutable segments and deterministic observation preserve the full interaction trajectory. Every result is auditable and traceable—a "gold standard" for high‑trust sectors such as judiciary, finance, and medicine.
+          <strong>Determinism and auditability:</strong> Immutable Segments and deterministic Observation provide full traceability, supporting high-trust domains like finance, healthcare, and public policy.
         </li>
         <li>
-          Sustainable Social Infrastructure: By combining extreme energy efficiency with high‑performance interpretability, SSCCS supports complex public decision‑making processes—from urban planning to resource allocation—while maintaining total transparency and minimal environmental footprint.
+          <strong>Sustainable computational infrastructure:</strong> Structure-centric design minimizes environmental impact while supporting complex, transparent decision-making.
         </li>
         <li>
-          Cryptographic Security and Isolation: Each Segment and Scheme carries a cryptographic hash identity. Execution occurs within isolated environments governed by binary‑level policies, ensuring secure, auditable, and policy‑compliant computation. Boundaries are cryptographically enforced, eliminating entire classes of vulnerabilities.
+          <strong>Secure isolation:</strong> Cryptographic identity of Segments and Schemes enforces boundaries, ensuring computations remain auditable and free from hidden interference.
         </li>
       </ul>
 
-      <h2>Support and Collaboration</h2>
+      <h2>Collaboration</h2>
       <p>
-        We seek institutional partnerships to transition from a draft statute to a fully operational research organization. Inquiries regarding software infrastructure development, academic collaborations, and strategic advisory for non‑profit deep‑tech initiatives are welcome.
+        SSCCS invites partnerships from academia, industry, and public institutions. Opportunities include research collaboration, software toolchain development, and strategic guidance for non-profit deep-tech initiatives.
       </p>
 
       <h2>Legal Status</h2>
       <p>
-        SSCCS operates under a draft statute, pending formal notarization as a German gUG (non‑profit limited liability company). Project descriptions and contact information are shared for collaboration and support purposes.
+        SSCCS operates under a draft statute, pending notarization as a German gUG (non-profit limited liability company). Project details and contact information are provided for collaboration purposes.
       </p>
       <p style={{ marginTop: '20px' }}>
         <a href="/satzung_draft_v1.pdf" target="_blank" rel="noopener noreferrer">SSCCS Draft Statute (PDF)</a>
@@ -52,12 +46,8 @@ export default function Home() {
 
       <h2>Contact</h2>
       <ul>
-        <li>
-          <a href="mailto:contact@ssccs.org">contact@ssccs.org</a>
-        </li>
-        <li>
-          <a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">GitHub</a> (supporting <a href="https://radicle.xyz/">decentralized git</a>)
-        </li>
+        <li><a href="mailto:contact@ssccs.org">contact@ssccs.org</a></li>
+        <li><a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">GitHub</a> (supporting <a href="https://radicle.xyz/">decentralized git</a>)</li>
       </ul>
       <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
 
