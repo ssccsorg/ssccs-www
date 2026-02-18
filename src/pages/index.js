@@ -4,12 +4,12 @@ export default function Home() {
       <h1>Schema–Segment Composition Computing System</h1>
 
       <p>
-        SSCCS is a non‑profit research initiative that redefines computation as the observation of structured potential under dynamic constraints. Moving beyond the von Neumann model, it frames computation as the deterministic Projection of immutable Segments within geometric Schemes, with Fields encoding dynamic admissibility. Logic becomes transparent and verifiable, forming an Intellectual Public Commons accessible to all. This structure-centric approach naturally reduces data movement, enables inherent parallelism, and ensures secure, auditable execution.
+        SSCCS is a research initiative that redefines the ontological foundation of computation, modeling it as the traceable Projection of immutable Segments within a structured Scheme. While contemporary innovation focuses predominantly on material hardware shifts, SSCCS challenges and addresses the fundamental inefficiencies of the Von Neumann bottleneck at the logical layer. By formalizing computation as the simultaneous resolution of static potential under dynamic constraints rather than a sequence of state mutations, the architecture reframes data movement, concurrency, and verifiability.
       </p>
-
-      <h2>Project Overview</h2>
       <p>
-        Computation occurs solely through Observation: when the structure defined by Schemes and the dynamic constraints in Fields create an admissible configuration, a deterministic Projection is produced. Segments remain immutable and stationary, while the Field tracks the evolving constraints. The compiler maps Schemes to hardware, preserving locality and enabling implicit parallelism. The process ensures reproducible, interpretable outcomes at any scale.
+        The framework operates through a distinct ontology: Segments serve as immutable carriers of structured information, while Schemes define bounded structural contexts. Fields constitute relational topologies governed by dynamic constraints that dictate admissible configurations. Within this layer, computation is executed through Observation, which deterministically resolves these configurations into a Projection without altering underlying Segments. This structural approach inherently minimizes data movement, eliminates synchronization overhead, and enables implicit parallelism.
+      </p><p>
+        Driven by a software-first philosophy, this architecture ensures deterministic reproducibility by completely decoupling execution logic from mutable state through structural and cryptographic isolation. This open specification, validated across diverse domains, provides a roadmap where logical design dictates physical implementation, spanning from software emulation to hardware-level support. By integrating intrinsic energy efficiency with high interpretability, SSCCS establishes a foundation for sustainable, accountable computational infrastructures, ultimately transitioning logic into a transparent, verifiable, and accessible Intellectual Public Commons.
       </p>
 
       <h2>Core Values and Impact</h2>
