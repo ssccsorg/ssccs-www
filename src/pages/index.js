@@ -46,7 +46,7 @@ export default function Home() {
 
       <h2>Contact</h2>
       <ul>
-        <li><a href="mailto:contact@ssccs.org">contact@ssccs.org</a> (<a href="mailto:contact@ssccs.org">OpenPGP public key</a>)</li>
+        <li><a href="mailto:contact@ssccs.org">contact@ssccs.org</a> (<a href="contact@ssccs.org-openpgp-public.asc">OpenPGP key</a>)</li>
         <li><a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">GitHub</a> (supporting <a href="https://radicle.xyz/">decentralized git</a>)</li>
       </ul>
       <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
