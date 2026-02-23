@@ -44,10 +44,11 @@ export default function Home() {
         <a href="/satzung_draft_v1.pdf" target="_blank" rel="noopener noreferrer">SSCCS Draft Statute (PDF)</a>
       </p>
 
-      <h2>Contact</h2>
+      <h2>Info</h2>
       <ul>
         <li><a href="mailto:contact@ssccs.org">contact@ssccs.org</a> (<a href="contact@ssccs.org-openpgp-public.asc">OpenPGP key</a>)</li>
         <li><a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">GitHub</a> (supporting <a href="https://radicle.xyz/">decentralized git</a>)</li>
+        <li><a href="https://github.com/ssccsorg/ssccs/blob/main/docs/Whitepaper.pdf" target="_blank" rel="noopener noreferrer">Whitepaper (PDF)</a></li>
       </ul>
       <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
 
