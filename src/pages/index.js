@@ -38,17 +38,19 @@ export default function Home() {
 
       <h2>Legal Status</h2>
       <p>
-        SSCCS operates under a draft statute, pending notarization as a German gUG (non-profit limited liability company). Project details and contact information are provided for collaboration purposes.
-      </p>
-      <p style={{ marginTop: '20px' }}>
-        <a href="/satzung_draft_v1.pdf" target="_blank" rel="noopener noreferrer">SSCCS Draft Statute (PDF)</a>
+        SSCCS operates under a draft statute, pending notarization as a German non-profit limited liability company: <a href="/satzung_draft_v1.pdf" target="_blank" rel="noopener noreferrer">Draft Statute (PDF)</a>
       </p>
 
-      <h2>Info</h2>
+      <h2>Artifacts</h2>
       <ul>
-        <li><a href="mailto:contact@ssccs.org">contact@ssccs.org</a> (<a href="contact@ssccs.org-openpgp-public.asc">OpenPGP key</a>)</li>
-        <li><a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">GitHub</a> (supporting <a href="https://radicle.xyz/">decentralized git</a>)</li>
-        <li><a href="https://github.com/ssccsorg/ssccs/blob/main/docs/Whitepaper.pdf" target="_blank" rel="noopener noreferrer">Whitepaper (PDF)</a></li>
+        <li>Repository: <a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">Github</a> | <a href="https://radicle.xyz/">decentralized git</a></li>
+        <li>Whitepaper: <a href="https://github.com/ssccsorg/ssccs/blob/main/docs/Whitepaper.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | uploaded by <a href="https://keys.openpgp.org/search?q=BCCB196BADF50C99">GPG ID: BCCB196BADF50C99</a></li>
+        <li>DOI: <a href="https://doi.org/10.5281/zenodo.18759106" target="_blank" rel="noopener noreferrer">10.5281/zenodo.18759106</a> | indexed in <a href="https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.18759107">OpenAIRE</a></li>
+      </ul>
+
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="mailto:contact@ssccs.org">contact@ssccs.org</a> | verifiable via <a href="contact@ssccs.org-openpgp-public.asc">OpenPGP key</a></li>
       </ul>
       <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
 
