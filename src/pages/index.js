@@ -69,7 +69,7 @@ export default function Home() {
           style={{
             height: '50px',
             margin: '20px',
-            filter: 'grayscale(1) brightness(0)'
+            filter: 'grayscale(1)'
           }}
         />
       <img
