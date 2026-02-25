@@ -38,7 +38,7 @@ export default function Home() {
 
       <h2>Legal Status</h2>
       <p>
-        SSCCS operates under a draft statute, pending notarization as a German non-profit limited liability company: <a href="/satzung_draft_v1.pdf" target="_blank" rel="noopener noreferrer">Draft Statute (PDF)</a>
+        SSCCS operates under a draft statute, pending the establishment of a German non-profit limited liability company: <a href="/satzung_draft_v1.pdf" target="_blank" rel="noopener noreferrer">Draft Statute (PDF)</a>
       </p>
 
 
