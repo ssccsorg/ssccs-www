@@ -41,22 +41,57 @@ export default function Home() {
         SSCCS operates under a draft statute, pending notarization as a German non-profit limited liability company: <a href="/satzung_draft_v1.pdf" target="_blank" rel="noopener noreferrer">Draft Statute (PDF)</a>
       </p>
 
-      <h2>Artifacts</h2>
+
+
+      <h2>Official Channels</h2>
       <ul>
         <li>Repository: <a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">Github</a> | <a href="https://radicle.xyz/">decentralized git</a></li>
-        <li>Whitepaper: <a href="https://github.com/ssccsorg/ssccs/blob/main/docs/Whitepaper.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | uploaded by <a href="https://keys.openpgp.org/search?q=BCCB196BADF50C99">GPG ID: BCCB196BADF50C99</a></li>
-        <li>DOI: <a href="https://doi.org/10.5281/zenodo.18759106" target="_blank" rel="noopener noreferrer">10.5281/zenodo.18759106</a> | indexed in <a href="https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.18759107">OpenAIRE</a></li>
-      </ul>
 
-      <h2>Contact</h2>
-      <ul>
         <li><a href="mailto:contact@ssccs.org">contact@ssccs.org</a> | verifiable via <a href="contact@ssccs.org-openpgp-public.asc">OpenPGP key</a></li>
       </ul>
       <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
 
+      SSCCS is formalized through global standards and anchored by immutable scientific records and cryptographic proofs.
+      <br />
+      <p>
+        <ul>
+          <li>Whitepaper: <a href="https://github.com/ssccsorg/ssccs/blob/main/docs/Whitepaper.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | Verified by <a href="https://keys.openpgp.org/search?q=BCCB196BADF50C99">GPG ID: BCCB196BADF50C99</a></li>
+          <li>DOI: <a href="https://doi.org/10.5281/zenodo.18759106" target="_blank" rel="noopener noreferrer">10.5281/zenodo.18759106</a> | Registered in <a href="https://openscience.cern/zenodo">CERN Zedono</a> and <a href="https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.18759107">OpenAIRE</a></li>
+        </ul>
+
+      </p>
+
+      <p>
+
+         <img
+          src="https://www.openaire.eu/images/Logos/OpenAIRE-logo.png"
+          alt="Open AIRE"
+          style={{
+            height: '50px',
+            margin: '20px',
+            filter: 'grayscale(1) brightness(0)'
+          }}
+        />
+      <img
+          src="https://openscience.cern/themes/custom/cern-theme/logo.svg"
+          alt="CERN Open Science"
+          style={{
+            height: '80px',
+            margin: '20px',
+            filter: 'invert(1)' 
+          }}
+      />
+
+       
+
+      </p>
+
       <footer>
-        SSCCS gUG (in Gründung) – Non‑profit research initiative
+
+
+       © 2026 SSCCS gUG (in Gründung) – Non‑profit research initiative
       </footer>
+      
     </main>
   );
 }
