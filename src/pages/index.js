@@ -45,53 +45,54 @@ export default function Home() {
 
       <h2>Official Channels</h2>
       <ul>
-        <li>Repository: <a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">Github</a> | <a href="https://radicle.xyz/">decentralized git</a></li>
-
-        <li><a href="mailto:contact@ssccs.org">contact@ssccs.org</a> | verifiable via <a href="contact@ssccs.org-openpgp-public.asc">OpenPGP key</a></li>
+        <li><a href="mailto:contact@ssccs.org">contact@ssccs.org</a> | <a href="contact@ssccs.org-openpgp-public.asc">OpenPGP key</a></li>
       </ul>
       <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
 
-      SSCCS is formalized through global standards and anchored by immutable scientific records and cryptographic proofs.
-      <br />
-      <p>
-        <ul>
-          <li>Whitepaper: <a href="https://github.com/ssccsorg/ssccs/blob/main/docs/Whitepaper.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | Verified by <a href="https://keys.openpgp.org/search?q=BCCB196BADF50C99">GPG ID: BCCB196BADF50C99</a></li>
-          <li>DOI: <a href="https://doi.org/10.5281/zenodo.18759106" target="_blank" rel="noopener noreferrer">10.5281/zenodo.18759106</a> | Registered in <a href="https://openscience.cern/zenodo">CERN Zedono</a> and <a href="https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.18759107">OpenAIRE</a></li>
-        </ul>
 
-      </p>
-
-      <p>
-
-         <img
-          src="https://www.openaire.eu/images/Logos/OpenAIRE-logo.png"
-          alt="Open AIRE"
-          style={{
-            height: '50px',
-            margin: '20px',
-            filter: 'grayscale(1)'
-          }}
-        />
-      <img
-          src="https://openscience.cern/themes/custom/cern-theme/logo.svg"
-          alt="CERN Open Science"
-          style={{
-            height: '80px',
-            margin: '20px',
-            filter: 'invert(1)' 
-          }}
-      />
-
-       
-
-      </p>
 
       <footer>
+        <p>
+          © 2026 SSCCS gUG (i.G.) — A non‑profit research initiative, formalized through global standards and its authenticity substantiated by immutable scientific records and cryptographic proofs.
+        </p>
+        <ul>
+          <li>Source code under Apache-2.0: <a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">Github</a> | Verifiable by <a href="https://keys.openpgp.org/search?q=BCCB196BADF50C99">GPG ID: BCCB196BADF50C99</a></li>
 
+          <li>
+            Whitepaper under CC BY-NC-ND 4.0: <a href="https://github.com/ssccsorg/ssccs/blob/main/docs/Whitepaper.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | Registered in CERN DOI: <a href="https://doi.org/10.5281/zenodo.18759106" target="_blank" rel="noopener noreferrer">10.5281/zenodo.18759106</a>, <a href="https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.18759107">OpenAIRE</a>
+          </li>
+        </ul>
 
-       © 2026 SSCCS gUG (in Gründung) – Non‑profit research initiative
+        <div>
+          <a href="https://www.openaire.eu/">
+
+            <img
+              src="https://www.openaire.eu/images/Logos/OpenAIRE-logo.png"
+              alt="Open AIRE"
+              style={{
+                height: '50px',
+                marginRight: '30px',
+                marginTop: '30px',
+                marginBottom: '20px',
+                filter: 'grayscale(1)'
+              }}
+            />
+          </a>
+          <a href="https://cernandsocietyfoundation.cern/projects/zenodo">
+            <img
+              src="https://openscience.cern/themes/custom/cern-theme/logo.svg"
+              alt="CERN Open Science"
+              style={{
+                height: '80px',
+                marginTop: '30px',
+                marginBottom: '20px',
+                filter: 'invert(1)'
+              }}
+            />
+          </a>
+        </div>
       </footer>
-      
+
     </main>
   );
 }
