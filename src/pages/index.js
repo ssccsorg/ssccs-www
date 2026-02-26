@@ -49,8 +49,6 @@ export default function Home() {
       </ul>
       <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
 
-
-
       <footer>
         <p>
           © 2026 SSCCS gUG (i.G.) — A non‑profit research initiative, formalized through global standards and its authenticity substantiated by immutable scientific records and cryptographic proofs.
@@ -65,28 +63,25 @@ export default function Home() {
 
         <div>
           <a href="https://www.openaire.eu/">
-
             <img
-              src="https://www.openaire.eu/images/Logos/OpenAIRE-logo.png"
+              src="./images/openaire.svg"
               alt="Open AIRE"
               style={{
                 height: '50px',
                 marginRight: '30px',
                 marginTop: '30px',
-                marginBottom: '20px',
-                filter: 'grayscale(1)'
+                marginBottom: '20px'
               }}
             />
           </a>
           <a href="https://cernandsocietyfoundation.cern/projects/zenodo">
             <img
-              src="https://openscience.cern/themes/custom/cern-theme/logo.svg"
+              src="./images/cern.svg"
               alt="CERN Open Science"
               style={{
                 height: '80px',
                 marginTop: '30px',
-                marginBottom: '20px',
-                filter: 'invert(1)'
+                marginBottom: '20px'
               }}
             />
           </a>
