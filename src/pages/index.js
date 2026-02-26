@@ -54,10 +54,10 @@ export default function Home() {
           © 2026 SSCCS gUG (i.G.) — A non‑profit research initiative, formalized through global standards and its authenticity substantiated by immutable scientific records and cryptographic proofs.
         </p>
         <ul>
-          <li>Source code under Apache-2.0: <a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">Github</a> | Verifiable by <a href="https://keys.openpgp.org/search?q=BCCB196BADF50C99">GPG ID: BCCB196BADF50C99</a></li>
+          <li>Source code under Apache-2.0: <a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">Github</a> | GPG ID: <a href="https://keys.openpgp.org/search?q=BCCB196BADF50C99">BCCB196BADF50C99</a></li>
 
           <li>
-            Whitepaper under CC BY-NC-ND 4.0: <a href="https://ssccs.org/wp" target="_blank" rel="noopener noreferrer">PDF</a> | Registered in CERN DOI: <a href="https://doi.org/10.5281/zenodo.18787286" target="_blank" rel="noopener noreferrer">10.5281/zenodo.18787286</a>, <a href="https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.18759107">OpenAIRE</a>
+            Whitepaper under CC BY-NC-ND 4.0: <a href="https://ssccs.org/wp" target="_blank" rel="noopener noreferrer">PDF</a>, <a href="https://ssccsorg.github.io/ssccs" target="_blank" rel="noopener noreferrer">HTML</a> | DOI: <a href="https://doi.org/10.5281/zenodo.18787286" target="_blank" rel="noopener noreferrer">10.5281/zenodo.18787286</a> by CERN, <a href="https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.18759107">OpenAIRE</a>
           </li>
         </ul>
 
