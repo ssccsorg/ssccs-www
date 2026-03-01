@@ -1,6 +1,5 @@
-import Plot from 'react-plotly.js';
 import ontology3d from './ontology3d.json';
-
+import BrowserOnly from '@docusaurus/BrowserOnly';
 export default function Home() {
   return (
     <main style={{ maxWidth: '100%', width: 'clamp(600px, 90%, 60%)', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6', fontFamily: 'serif' }}>
@@ -9,40 +8,49 @@ export default function Home() {
       <p>
         SSCCS is a research initiative that redefines the ontological foundation of computation, modeling it as the traceable Projection of immutable Segments within a structured Scheme. While contemporary innovation focuses predominantly on material hardware shifts, SSCCS challenges and addresses the fundamental inefficiencies of the Von Neumann bottleneck at the logical layer. By formalizing computation as the simultaneous resolution of static potential under dynamic constraints rather than a sequence of state mutations, the architecture reframes data movement, concurrency, and verifiability.
       </p>
-      <div style={{
-        width: '100%',
-        height: '540px',
-        marginBottom: '40px',
-        marginTop: '-70px',
-        position: 'relative'
-      }}>
-        <Plot
-          data={ontology3d.data}
-          layout={{
-            ...ontology3d.layout,
-            autosize: true,
-            height: undefined,
-            width: undefined,
-            scene: {
-              ...ontology3d.layout.scene,
-              dragmode: 'turntable',
-              camera: {
-                eye: { x: 1.8, y: 0.85, z: 0.6 }
-              },
-              aspectratio: { x: 1, y: 1, z: 0.9 },
-              xaxis: { title: '', showgrid: true },
-              yaxis: { title: '', showgrid: true },
-              zaxis: { title: '', showgrid: true },
-            },
-            margin: { l: 0, r: 0, b: 0, t: 0 },
-            paper_bgcolor: 'rgba(0,0,0,0)',
-            plot_bgcolor: 'rgba(0,0,0,0)',
-          }}
-          style={{ width: "100%", height: "100%" }}
-          useResizeHandler={true}
-          config={{ displayModeBar: false }}
-        />
-      </div>
+
+      <BrowserOnly fallback={<div style={{ height: '540px' }}></div>}>
+        {() => {
+          const Plot = require('react-plotly.js').default;
+
+          return (
+            <div style={{
+              width: '100%',
+              height: '540px',
+              marginBottom: '40px',
+              marginTop: '-60px',
+              position: 'relative'
+            }}>
+              <Plot
+                data={ontology3d.data}
+                layout={{
+                  ...ontology3d.layout,
+                  autosize: true,
+                  height: undefined,
+                  width: undefined,
+                  scene: {
+                    ...ontology3d.layout.scene,
+                    dragmode: 'turntable',
+                    camera: {
+                      eye: { x: 1.8, y: 0.85, z: 0.6 } // GUG님이 설정하신 살짝 줌아웃 값
+                    },
+                    aspectratio: { x: 1, y: 1, z: 0.9 },
+                    xaxis: { title: '', showgrid: true },
+                    yaxis: { title: '', showgrid: true },
+                    zaxis: { title: '', showgrid: true },
+                  },
+                  margin: { l: 0, r: 0, b: 0, t: 0 },
+                  paper_bgcolor: 'rgba(0,0,0,0)',
+                  plot_bgcolor: 'rgba(0,0,0,0)',
+                }}
+                style={{ width: "100%", height: "100%" }}
+                useResizeHandler={true}
+                config={{ displayModeBar: false }}
+              />
+            </div>
+          );
+        }}
+      </BrowserOnly>
 
 
       <p>
