@@ -2,7 +2,7 @@ import ontology3d from './ontology3d.json';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 export default function Home() {
   return (
-    <main style={{ maxWidth: '100%', width: 'clamp(600px, 90%, 60%)', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6', fontFamily: 'serif' }}>
+    <main style={{ maxWidth: '100%', width: 'clamp(600px, 90%, min(60%, 1000px))', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6', fontFamily: 'serif' }}>
       <h1>Schema–Segment Composition Computing System</h1>
 
       <p>
@@ -16,7 +16,7 @@ export default function Home() {
           return (
             <div style={{
               width: '100%',
-              height: '540px',
+              height: 'clamp(400px, 50vh, 600px)',
               marginBottom: '40px',
               marginTop: '-60px',
               position: 'relative'
