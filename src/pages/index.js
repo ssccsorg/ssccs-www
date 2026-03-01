@@ -1,14 +1,55 @@
+import Plot from 'react-plotly.js';
+import ontology3d from './ontology3d.json';
+
 export default function Home() {
   return (
-    <main style={{ maxWidth: '900px', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6', fontFamily: 'serif' }}>
+    <main style={{ maxWidth: '100%', width: 'clamp(600px, 90%, 60%)', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6', fontFamily: 'serif' }}>
       <h1>Schema–Segment Composition Computing System</h1>
 
       <p>
         SSCCS is a research initiative that redefines the ontological foundation of computation, modeling it as the traceable Projection of immutable Segments within a structured Scheme. While contemporary innovation focuses predominantly on material hardware shifts, SSCCS challenges and addresses the fundamental inefficiencies of the Von Neumann bottleneck at the logical layer. By formalizing computation as the simultaneous resolution of static potential under dynamic constraints rather than a sequence of state mutations, the architecture reframes data movement, concurrency, and verifiability.
       </p>
+      <div style={{
+        width: '100%',
+        height: '540px',
+        marginBottom: '40px',
+        marginTop: '-70px',
+        position: 'relative'
+      }}>
+        <Plot
+          data={ontology3d.data}
+          layout={{
+            ...ontology3d.layout,
+            autosize: true,
+            height: undefined,
+            width: undefined,
+            scene: {
+              ...ontology3d.layout.scene,
+              dragmode: 'turntable',
+              camera: {
+                eye: { x: 1.8, y: 0.85, z: 0.6 }
+              },
+              aspectratio: { x: 1, y: 1, z: 0.9 },
+              xaxis: { title: '', showgrid: true },
+              yaxis: { title: '', showgrid: true },
+              zaxis: { title: '', showgrid: true },
+            },
+            margin: { l: 0, r: 0, b: 0, t: 0 },
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+          }}
+          style={{ width: "100%", height: "100%" }}
+          useResizeHandler={true}
+          config={{ displayModeBar: false }}
+        />
+      </div>
+
+
       <p>
         The framework operates through a distinct ontology: Segments serve as immutable carriers of structured information, while Schemes define bounded structural contexts. Fields constitute relational topologies governed by dynamic constraints that dictate admissible configurations. Within this layer, computation is executed through Observation, which deterministically resolves these configurations into a Projection without altering underlying Segments. This structural approach inherently minimizes data movement, eliminates synchronization overhead, and enables implicit parallelism.
-      </p><p>
+      </p>
+
+      <p>
         Driven by a software-first philosophy, this architecture ensures deterministic reproducibility by completely decoupling execution logic from mutable state through structural and cryptographic isolation. This open specification, validated across diverse domains, provides a roadmap where logical design dictates physical implementation, spanning from software emulation to hardware-level support. By integrating intrinsic energy efficiency with high interpretability, SSCCS establishes a foundation for sustainable, accountable computational infrastructures, ultimately transitioning logic into a transparent, verifiable, and accessible Intellectual Public Commons.
       </p>
 

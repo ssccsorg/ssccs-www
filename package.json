@@ -24,9 +24,11 @@
     "framer-motion": "^12.26.1",
     "katex": "^0.16.22",
     "mermaid": "^10.9.5",
+    "plotly.js": "^3.4.0",
     "prism-react-renderer": "^2.3.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "react-plotly.js": "^2.6.0",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0"
   },
