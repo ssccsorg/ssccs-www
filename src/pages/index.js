@@ -80,35 +80,33 @@ export default function Home() {
         </li>
       </ul>
 
+
+
+
       <h2>Collaboration</h2>
       <p>
         SSCCS invites partnerships from academia, industry, and public institutions. Opportunities include research collaboration, software toolchain development, and strategic guidance for non-profit deep-tech initiatives.
       </p>
 
-      <h2>Legal Status</h2>
-      <p>
-        SSCCS operates under a draft statute, pending the establishment of a German non-profit limited liability company: <a href="/satzung_draft_v1.pdf" target="_blank" rel="noopener noreferrer">Draft Statute (PDF)</a>
-      </p>
 
 
-
-      <h2>Official Channels</h2>
+      <h2>Assets</h2>
       <ul>
-        <li><a href="mailto:contact@ssccs.org">contact@ssccs.org</a> | <a href="contact@ssccs.org-openpgp-public.asc">OpenPGP key</a></li>
+        <li><strong>Contact:</strong> <a href="mailto:contact@ssccs.org">contact@ssccs.org</a> | <a href="contact@ssccs.org-openpgp-public.asc">OpenPGP key</a></li>
+        <li><strong>Open Source Software:</strong>: All resources are licensed under the <i>Apache License 2.0</i> in the official <a href="https://github.com/ssccsorg">Github</a>. All codes are signed by GPG Key ID: <a href="https://keys.openpgp.org/search?q=BCCB196BADF50C99">BCCB196BADF50C99</a></li>
+        <li><strong>Publications:</strong> The Whitepaper and all specification documents are licensed under <i>CC BY-NC-ND 4.0</i>: <a href="https://ssccs.org/wp">PDF</a> | <a href="https://ssccsorg.github.io/ssccs">HTML</a> | DOI <a href="https://doi.org/10.5281/zenodo.18759106">10.5281/zenodo.18759106</a> registered in CERN/Zenodo, OpenAIRE</li>
+        <li><strong>Legal:</strong> Governed by the <a href="https://ssccsorg.github.io/ssccs/legal"><i>Foundational Charter and Statute</i></a>: Currently in a pre-incorporation phase as a global research initiative, not restricted by any specific legal jurisdiction.</li>
+
       </ul>
-      <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
+
+            <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
+
 
       <footer>
-        <p>
-          © 2026 SSCCS Foundation — A non‑profit research initiative, formalized through global standards and its authenticity substantiated by immutable scientific records and cryptographic proofs.
-        </p>
-        <ul>
-          <li>Source code under Apache-2.0: <a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">Github</a> | GPG ID: <a href="https://keys.openpgp.org/search?q=BCCB196BADF50C99">BCCB196BADF50C99</a></li>
 
-          <li>
-            Whitepaper under CC BY-NC-ND 4.0: <a href="https://ssccs.org/wp" target="_blank" rel="noopener noreferrer">PDF</a>, <a href="https://ssccsorg.github.io/ssccs" target="_blank" rel="noopener noreferrer">HTML</a> | DOI: <a href="https://doi.org/10.5281/zenodo.18759106" target="_blank" rel="noopener noreferrer">10.5281/zenodo.18759106</a> by CERN, <a href="https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.18759107">OpenAIRE</a>
-          </li>
-        </ul>
+        <p>
+          © 2026 SSCCS Foundation (in formation) — A non-profit research initiative, formalized through global standards and its authenticity substantiated by immutable scientific records and cryptographic proofs.
+        </p>
 
         <div>
           <a href="https://www.openaire.eu/">
@@ -118,7 +116,6 @@ export default function Home() {
               style={{
                 height: '50px',
                 marginRight: '30px',
-                marginTop: '30px',
                 marginBottom: '20px'
               }}
             />
@@ -129,7 +126,6 @@ export default function Home() {
               alt="CERN Open Science"
               style={{
                 height: '80px',
-                marginTop: '30px',
                 marginBottom: '20px'
               }}
             />
