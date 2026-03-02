@@ -100,7 +100,7 @@ export default function Home() {
 
       <footer>
         <p>
-          © 2026 SSCCS gUG (i.G.) — A non‑profit research initiative, formalized through global standards and its authenticity substantiated by immutable scientific records and cryptographic proofs.
+          © 2026 SSCCS Foundation — A non‑profit research initiative, formalized through global standards and its authenticity substantiated by immutable scientific records and cryptographic proofs.
         </p>
         <ul>
           <li>Source code under Apache-2.0: <a href="https://github.com/ssccsorg" target="_blank" rel="noopener noreferrer">Github</a> | GPG ID: <a href="https://keys.openpgp.org/search?q=BCCB196BADF50C99">BCCB196BADF50C99</a></li>
