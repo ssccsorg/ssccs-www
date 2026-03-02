@@ -17,8 +17,7 @@ export default function Home() {
             <div style={{
               width: '100%',
               height: 'clamp(400px, 50vh, 600px)',
-              marginBottom: '40px',
-              marginTop: '-60px',
+              marginBottom: '50px',
               position: 'relative'
             }}>
               <Plot
@@ -32,7 +31,8 @@ export default function Home() {
                     ...ontology3d.layout.scene,
                     dragmode: 'turntable',
                     camera: {
-                      eye: { x: 1.8, y: 0.85, z: 0.6 } // GUG님이 설정하신 살짝 줌아웃 값
+                      eye: { x: -1.2, y: 1.5, z: 0.65 },
+                      center: { x: 0, y: 0, z: -0.1 },
                     },
                     aspectratio: { x: 1, y: 1, z: 0.9 },
                     xaxis: { title: '', showgrid: true },
