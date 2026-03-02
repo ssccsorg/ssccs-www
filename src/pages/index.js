@@ -2,28 +2,59 @@ import ontology3d from './ontology3d.json';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 export default function Home() {
   return (
+
     <main style={{ maxWidth: '100%', width: 'clamp(600px, 90%, min(60%, 1000px))', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6', fontFamily: 'serif' }}>
+
+
+      <nav style={{
+        fontSize: '0.9rem',
+        display: 'flex',
+        justifyContent: 'center',
+        gap: '8px',
+        marginTop: "0px",
+      }}>
+        <a href="https://ssccsorg.github.io/ssccs" >Whitepaper</a>
+        <span style={{ fontWeight: 'bold' }}>·</span>
+
+        <a href="https://github.com/ssccsorg" >Github</a>
+        <span style={{ fontWeight: 'bold' }}>·</span>
+
+        <a href="mailto:contact@ssccs.org" >Contact</a><a href="contact@ssccs.org-openpgp-public.asc" >PGP key</a>
+      </nav>
+
+      <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
+
       <h1>Schema–Segment Composition Computing System</h1>
 
       <p>
-        SSCCS is a research initiative that redefines the ontological foundation of computation, modeling it as the traceable Projection of immutable Segments within a structured Scheme. While contemporary innovation focuses predominantly on material hardware shifts, SSCCS challenges and addresses the fundamental inefficiencies of the Von Neumann bottleneck at the logical layer. By formalizing computation as the simultaneous resolution of static potential under dynamic constraints rather than a sequence of state mutations, the architecture reframes data movement, concurrency, and verifiability.
+        SSCCS (Schema–Segment Composition Computing System) is an observation-driven
+computing model and infrastructure specification that redefines computation as the traceable
+projection of immutable Segments within a structured Scheme. While contemporary innovation focuses on material hardware shifts, SSCCS addresses fundamental inefficiencies of the
+Von Neumann bottleneck at the logical layer. By formalizing computation as the simultaneous resolution of static potential under dynamic constraints rather than a sequence of state
+mutations, the architecture reframes data movement, concurrency, and verifiability.
       </p>
+
 
       <BrowserOnly fallback={<div style={{ height: '540px' }}></div>}>
         {() => {
           const Plot = require('react-plotly.js').default;
-
+          const zoomRatio = 1
           return (
             <div style={{
               width: '100%',
               height: 'clamp(400px, 50vh, 600px)',
-              marginBottom: '50px',
               position: 'relative'
             }}>
               <Plot
                 data={ontology3d.data}
                 layout={{
                   ...ontology3d.layout,
+                  title: {
+                    text: '*Data is the shadow cast by the collapse of possibility.',
+                    font: { size: 12, color: '#343434' },
+                    x: 0.5,
+                    y: 0.06
+                  },
                   autosize: true,
                   height: undefined,
                   width: undefined,
@@ -31,10 +62,10 @@ export default function Home() {
                     ...ontology3d.layout.scene,
                     dragmode: 'turntable',
                     camera: {
-                      eye: { x: -1.2, y: 1.5, z: 0.65 },
-                      center: { x: 0, y: 0, z: -0.1 },
+                      eye: { x: -1.2 * 1 / zoomRatio, y: 1.5 * 1 / zoomRatio, z: 0.65 * 1 / zoomRatio },
+                      center: { x: 0, y: 0, z: -0.2 },
                     },
-                    aspectratio: { x: 1, y: 1, z: 0.9 },
+                    aspectratio: { x: 1, y: 1, z: 0.75 },
                     xaxis: { title: '', showgrid: true },
                     yaxis: { title: '', showgrid: true },
                     zaxis: { title: '', showgrid: true },
@@ -80,59 +111,65 @@ export default function Home() {
         </li>
       </ul>
 
-
-
-
+      <p></p>
       <h2>Collaboration</h2>
+
       <p>
         SSCCS invites partnerships from academia, industry, and public institutions. Opportunities include research collaboration, software toolchain development, and strategic guidance for non-profit deep-tech initiatives.
       </p>
 
+      <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
 
+      <footer style={{ 
+  fontSize: '0.85rem',
+}}>
+  <section>
+  <p>
+    © 2026 SSCCS Foundation (in formation) — A non-profit research initiative, formalized through global standards and its authenticity substantiated by immutable scientific records and cryptographic proofs:
+  </p>    
+  <ul style={{ listStyle: 'none', padding: 0 }}>
+    <li>
+      Open Source: Licensed under Apache 2.0. Repository: <a href="https://github.com/ssccsorg">GitHub</a>. Authenticated via GPG: <a href="https://keys.openpgp.org/search?q=BCCB196BADF50C99">BCCB196BADF50C99</a>.
+    </li>
+    <li>
+      Legal: Governed by the <a href="https://ssccsorg.github.io/ssccs/legal">Foundational Charter and Statute</a> of the SSCCS Foundation.
+    </li>
+    <li>
+      Publications: Licensed under CC BY-NC-ND 4.0. <a href="https://ssccs.org/wp">Whitepaper</a> DOI: <a href="https://doi.org/10.5281/zenodo.18759106">10.5281/zenodo.18759106</a> via CERN/Zenodo, indexed by OpenAIRE.
+    </li>
+  </ul>
+</section>
 
-      <h2>Assets</h2>
-      <ul>
-        <li><strong>Contact:</strong> <a href="mailto:contact@ssccs.org">contact@ssccs.org</a> | <a href="contact@ssccs.org-openpgp-public.asc">OpenPGP key</a></li>
-        <li><strong>Open Source Software:</strong>: All resources are licensed under the <i>Apache License 2.0</i> in the official <a href="https://github.com/ssccsorg">Github</a>. All codes are signed by GPG Key ID: <a href="https://keys.openpgp.org/search?q=BCCB196BADF50C99">BCCB196BADF50C99</a></li>
-        <li><strong>Publications:</strong> The Whitepaper and all specification documents are licensed under <i>CC BY-NC-ND 4.0</i>: <a href="https://ssccs.org/wp">PDF</a> | <a href="https://ssccsorg.github.io/ssccs">HTML</a> | DOI <a href="https://doi.org/10.5281/zenodo.18759106">10.5281/zenodo.18759106</a> registered in CERN/Zenodo, OpenAIRE</li>
-        <li><strong>Legal:</strong> Governed by the <a href="https://ssccsorg.github.io/ssccs/legal"><i>Foundational Charter and Statute</i></a>: Currently in a pre-incorporation phase as a global research initiative, not restricted by any specific legal jurisdiction.</li>
-
-      </ul>
-
-            <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
-
-
-      <footer>
-
-        <p>
-          © 2026 SSCCS Foundation (in formation) — A non-profit research initiative, formalized through global standards and its authenticity substantiated by immutable scientific records and cryptographic proofs.
-        </p>
-
-        <div>
-          <a href="https://www.openaire.eu/">
-            <img
-              src="./images/openaire.svg"
-              alt="Open AIRE"
-              style={{
-                height: '50px',
-                marginRight: '30px',
-                marginBottom: '20px'
-              }}
-            />
-          </a>
-          <a href="https://cernandsocietyfoundation.cern/projects/zenodo">
-            <img
-              src="./images/cern.svg"
-              alt="CERN Open Science"
-              style={{
-                height: '80px',
-                marginBottom: '20px'
-              }}
-            />
-          </a>
-        </div>
-      </footer>
+  <div style={{ 
+    display: 'flex', 
+    justifyContent: 'flex-end', 
+    alignItems: 'center', 
+    gap: '20px',
+    marginTop: '15px'
+  }}>
+    {PARTNERS.map(logo => (
+      <PartnerLogo 
+        key={logo.name} 
+        href={logo.href} 
+        src={logo.src} 
+        alt={logo.name} 
+        height={logo.h} 
+      />
+    ))}
+  </div>
+</footer>
 
     </main>
   );
 }
+
+const PARTNERS = [
+  { name: "Open AIRE", href: "https://www.openaire.eu/", src: "./images/openaire.svg", h: "40px" },
+  { name: "CERN", href: "https://cernandsocietyfoundation.cern/projects/zenodo", src: "./images/cern.svg", h: "60px" }
+];
+
+const PartnerLogo = ({ href, src, alt, height }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer">
+    <img src={src} alt={alt} style={{ height, width: 'auto', display: 'block' }} />
+  </a>
+);
