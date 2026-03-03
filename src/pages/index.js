@@ -3,42 +3,45 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 export default function Home() {
   return (
 
-    <main style={{ maxWidth: '100%', width: 'clamp(600px, 90%, min(60%, 1000px))', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6', fontFamily: 'serif' }}>
+    <main style={{ maxWidth: '100%', width: 'clamp(800px, 90%, min(60%, 1000px))', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6', fontFamily: 'serif' }}>
 
 
       <nav style={{
         fontSize: '0.9rem',
         display: 'flex',
         justifyContent: 'center',
-        gap: '8px',
-        marginTop: "0px",
+        gap: '6px',
+        marginBottom: "30px",
       }}>
-        <a href="https://ssccsorg.github.io/ssccs" >Whitepaper</a>
+        Whitepaper<a href="https://ssccs.org/wp">PDF</a><a href="https://ssccs.org/wpw">HTML</a>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
-        <a href="https://github.com/ssccsorg" >Github</a>
+        <a href="https://github.com/ssccsorg" >Official Repository</a>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
         <a href="mailto:contact@ssccs.org" >Contact</a><a href="contact@ssccs.org-openpgp-public.asc" >PGP key</a>
+
       </nav>
 
       <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
 
       <h1>Schema–Segment Composition Computing System</h1>
 
+      <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
+
       <p>
         SSCCS (Schema–Segment Composition Computing System) is an observation-driven
-computing model and infrastructure specification that redefines computation as the traceable
-projection of immutable Segments within a structured Scheme. While contemporary innovation focuses on material hardware shifts, SSCCS addresses fundamental inefficiencies of the
-Von Neumann bottleneck at the logical layer. By formalizing computation as the simultaneous resolution of static potential under dynamic constraints rather than a sequence of state
-mutations, the architecture reframes data movement, concurrency, and verifiability.
+        computing model and infrastructure specification that redefines computation as the traceable
+        projection of immutable Segments within a structured Scheme. While contemporary innovation focuses on material hardware shifts, SSCCS addresses fundamental inefficiencies of the
+        Von Neumann bottleneck at the logical layer. By formalizing computation as the simultaneous resolution of static potential under dynamic constraints rather than a sequence of state
+        mutations, the architecture reframes data movement, concurrency, and verifiability.
       </p>
 
 
       <BrowserOnly fallback={<div style={{ height: '540px' }}></div>}>
         {() => {
           const Plot = require('react-plotly.js').default;
-          const zoomRatio = 1
+          const zoomRatio = 0.97
           return (
             <div style={{
               width: '100%',
@@ -95,19 +98,19 @@ mutations, the architecture reframes data movement, concurrency, and verifiabili
       <h2>Core Values and Impact</h2>
       <ul>
         <li>
-          <strong>Energy-efficient and parallel computation:</strong> Data remains stationary; only Projections move. Energy is concentrated at the moment of observation, supporting scalable AI and distributed workloads.
+          Energy-efficient and parallel computation: Data remains stationary; only Projections move. Energy is concentrated at the moment of observation, supporting scalable AI and distributed workloads.
         </li>
         <li>
-          <strong>Public accessibility and standardization:</strong> Open, language-agnostic specifications promote transparency and technological sovereignty. The open format preserves verifiability and enables long-term, interoperable standards.
+          Public accessibility and standardization: Open, language-agnostic specifications promote transparency and technological sovereignty. The open format preserves verifiability and enables long-term, interoperable standards.
         </li>
         <li>
-          <strong>Determinism and auditability:</strong> Immutable Segments and deterministic Observation provide full traceability, supporting high-trust domains like finance, healthcare, and public policy.
+          Determinism and auditability: Immutable Segments and deterministic Observation provide full traceability, supporting high-trust domains like finance, healthcare, and public policy.
         </li>
         <li>
-          <strong>Sustainable computational infrastructure:</strong> Structure-centric design minimizes environmental impact while supporting complex, transparent decision-making.
+          Sustainable computational infrastructure: Structure-centric design minimizes environmental impact while supporting complex, transparent decision-making.
         </li>
         <li>
-          <strong>Secure isolation:</strong> Cryptographic identity of Segments and Schemes enforces boundaries, ensuring computations remain auditable and free from hidden interference.
+          Secure isolation: Cryptographic identity of Segments and Schemes enforces boundaries, ensuring computations remain auditable and free from hidden interference.
         </li>
       </ul>
 
@@ -120,44 +123,45 @@ mutations, the architecture reframes data movement, concurrency, and verifiabili
 
       <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
 
-      <footer style={{ 
-  fontSize: '0.85rem',
-}}>
-  <section>
-  <p>
-    © 2026 SSCCS Foundation (in formation) — A non-profit research initiative, formalized through global standards and its authenticity substantiated by immutable scientific records and cryptographic proofs:
-  </p>    
-  <ul style={{ listStyle: 'none', padding: 0 }}>
-    <li>
-      Open Source: Licensed under Apache 2.0. Repository: <a href="https://github.com/ssccsorg">GitHub</a>. Authenticated via GPG: <a href="https://keys.openpgp.org/search?q=BCCB196BADF50C99">BCCB196BADF50C99</a>.
-    </li>
-    <li>
-      Legal: Governed by the <a href="https://ssccsorg.github.io/ssccs/legal">Foundational Charter and Statute</a> of the SSCCS Foundation.
-    </li>
-    <li>
-      Publications: Licensed under CC BY-NC-ND 4.0. <a href="https://ssccs.org/wp">Whitepaper</a> DOI: <a href="https://doi.org/10.5281/zenodo.18759106">10.5281/zenodo.18759106</a> via CERN/Zenodo, indexed by OpenAIRE.
-    </li>
-  </ul>
-</section>
+      <footer style={{
+        fontSize: '0.85rem',
+      }}>
+        <section>
+          <p>
+            © 2026 SSCCS Foundation — A non-profit research initiative, formalized through global standards and substantiated by its cryptographic authenticity.
+          </p>
+          <ul>
+            <li>
+              Whitepaper: <a href="https://ssccs.org/wp">PDF</a> / <a href="https://ssccs.org/wpw">HTML</a> Licensed under <i>CC BY-NC-ND 4.0</i>. DOI: <a href="https://doi.org/10.5281/zenodo.18759106">10.5281/zenodo.18759106</a>) via CERN/Zenodo, indexed by OpenAIRE.
+            </li>
+            <li>
+              Official repository: <a href="https://github.com/ssccsorg">GitHub</a>. Licensed under <i>Apache 2.0</i>. Authenticated via GPG: <a href="https://keys.openpgp.org/search?q=BCCB196BADF50C99">BCCB196BADF50C99</a>.
+            </li>
+            <li>
+              Governed by the <a href="https://ssccsorg.github.io/ssccs/legal">Foundational Charter and Statute</a> of the SSCCS Foundation (in formation).
+            </li>
+          </ul>
 
-  <div style={{ 
-    display: 'flex', 
-    justifyContent: 'flex-end', 
-    alignItems: 'center', 
-    gap: '20px',
-    marginTop: '15px'
-  }}>
-    {PARTNERS.map(logo => (
-      <PartnerLogo 
-        key={logo.name} 
-        href={logo.href} 
-        src={logo.src} 
-        alt={logo.name} 
-        height={logo.h} 
-      />
-    ))}
-  </div>
-</footer>
+        </section>
+
+        <div style={{
+          display: 'flex',
+          justifyContent: 'flex-end',
+          alignItems: 'center',
+          gap: '20px',
+          marginTop: '15px'
+        }}>
+          {PARTNERS.map(logo => (
+            <PartnerLogo
+              key={logo.name}
+              href={logo.href}
+              src={logo.src}
+              alt={logo.name}
+              height={logo.h}
+            />
+          ))}
+        </div>
+      </footer>
 
     </main>
   );
