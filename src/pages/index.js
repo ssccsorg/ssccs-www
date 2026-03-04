@@ -16,7 +16,7 @@ export default function Home() {
         Whitepaper<a href="https://ssccs.org/wp">PDF</a><a href="https://ssccs.org/wpw">HTML</a>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
-        <a href="https://github.com/ssccsorg" >Official Repository</a>
+        <a href="https://github.com/ssccsorg" >Repository</a>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
         <a href="mailto:contact@ssccs.org" >Contact</a><a href="contact@ssccs.org-openpgp-public.asc" >PGP key</a>
@@ -140,6 +140,9 @@ export default function Home() {
             <li>
               Governed by the <a href="https://ssccsorg.github.io/ssccs/legal">Foundational Charter and Statute</a> of the SSCCS Foundation (in formation).
             </li>
+            <li>
+              Provenance: Human-authored and AI-refined: linguistic and editorial review; full intellectual responsibility with author(s). All major outputs are <a href="https://ssccs.org/wpc2pa">C2PA-certified</a>.
+            </li>
           </ul>
 
         </section>
@@ -168,6 +171,7 @@ export default function Home() {
 }
 
 const PARTNERS = [
+  { name: "C2PA", href: "https://www.c2pa.org/", src: "https://c2pa.org/wp-content/uploads/sites/33/2025/05/c2pa_logo.svg", h: "40px" },
   { name: "Open AIRE", href: "https://www.openaire.eu/", src: "./images/openaire.svg", h: "40px" },
   { name: "CERN", href: "https://cernandsocietyfoundation.cern/projects/zenodo", src: "./images/cern.svg", h: "60px" }
 ];
