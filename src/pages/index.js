@@ -23,11 +23,11 @@ export default function Home() {
 
       </nav>
 
-      <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
+      <hr style={{ margin: '30px 0', border: '0', borderTop: '1px solid #000' }} />
 
-      <h1>Schema–Segment Composition Computing System</h1>
+      <h1 align="center">Schema–Segment Composition Computing System</h1>
 
-      <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
+      <hr style={{ margin: '30px 0', border: '0', borderTop: '1px solid #000' }} />
 
       <p>
         SSCCS (Schema–Segment Composition Computing System) is an observation-driven
@@ -121,7 +121,7 @@ export default function Home() {
         SSCCS invites partnerships from academia, industry, and public institutions. Opportunities include research collaboration, software toolchain development, and strategic guidance for non-profit deep-tech initiatives.
       </p>
 
-      <hr style={{ margin: '40px 0', border: '0', borderTop: '1px solid #000' }} />
+      <hr style={{ margin: '30px 0', border: '0', borderTop: '1px solid #000' }} />
 
       <footer style={{
         fontSize: '0.85rem',
@@ -147,9 +147,11 @@ export default function Home() {
 
         </section>
 
+        <hr style={{ margin: '30px 0', border: '0', borderTop: '1px solid #000' }} />
+
         <div style={{
           display: 'flex',
-          justifyContent: 'flex-end',
+          justifyContent: 'center',
           alignItems: 'center',
           gap: '20px',
           marginTop: '15px'
