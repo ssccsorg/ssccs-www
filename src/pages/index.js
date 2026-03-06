@@ -14,13 +14,13 @@ export default function Home() {
         marginBottom: "30px",
         gap: '6px',
       }}>
-        Whitepaper<a href="https://ssccs.org/wp">PDF</a><a href="https://ssccs.org/wpw">HTML</a>
+        Whitepaper<a href={appendDateQuery("https://ssccs.org/wp")}>PDF</a><a href={appendDateQuery("https://ssccs.org/wpw")}>HTML</a>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
-        <a href="https://github.com/ssccsorg" >Repository</a>
+        <a href={appendDateQuery("https://github.com/ssccsorg")} >Repository</a>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
-        <a href="mailto:contact@ssccs.org" >Contact</a><a href="https://keys.openpgp.org/search?q=0xF812D4374FEE96A1" >PGP Key</a>
+        <a href={appendDateQuery("mailto:contact@ssccs.org")} >Contact</a><a href={appendDateQuery("https://keys.openpgp.org/search?q=0xF812D4374FEE96A1")} >PGP Key</a>
 
       </nav>
 
@@ -30,13 +30,11 @@ export default function Home() {
 
       <hr style={{ margin: '30px 0', border: '0', borderTop: '1px solid #000' }} />
 
-      <p>
-        SSCCS (Schema–Segment Composition Computing System) is a non-profit research initiative developing a reliable and energy-efficient computing infrastructure for existing hardware. It addresses the scalability, security, and energy constraints inherent in conventional instruction-based, mutable-state architectures.
-      </p>
 
       <p>
-        Instead of procedural instruction execution, SSCCS introduces a model where computation emerges from observing composed, immutable structural units. By making observation the sole computational event, the system achieves inherent parallelism, strong isolation, and predictable system behavior by design.
+        SSCCS (Schema–Segment Composition Computing System) is an observation-driven computing model that redefines computation as the traceable projection of immutable Segments within a structured Scheme. While current hardware advances focus on physical improvements, SSCCS tackles the Von Neumann bottleneck at the logical layer. By formalizing computation as the resolution of static potential under dynamic constraints—rather than sequential state mutations—the architecture reframes data movement, concurrency, and verifiability.
       </p>
+
 
 
       <BrowserOnly fallback={<div style={{ height: '540px' }}></div>}>
@@ -45,16 +43,14 @@ export default function Home() {
 
 
       <p>
-        The project focuses on delivering an open-source software stack, including a compiler and runtime environment, that operates on conventional processors while supporting high-concurrency and distributed execution. Execution is constrained through policy-based sandboxes enforced at the binary level, enabling secure and verifiable processing without dependence on proprietary platforms.
+        SSCCS embodies three core principles: Immutability (segments and schemes are immutable), Structural Integrity (computations follow predefined relationships), and Traceability (every projection is cryptographically verifiable). Its layered ontology—Segments, Schemes, Fields, and Projections—ensures information remains unchanged, operations transparent, and outcomes auditable.
       </p>
 
-      <p>
-        Due to its observation-centric nature, the system emphasizes high memory utilization and low operational energy, making it suitable for energy-aware and AI-adjacent computing workloads. Expected outcomes include a public reference implementation, technical documentation, and demonstrable prototypes validating the approach.
-      </p>
 
       <p>
-        Beyond software, SSCCS maintains a long-term research objective of providing architectural insights that may inform future computing hardware design, grounded in empirical validation on existing systems. The project aims to contribute foundational building blocks for trustworthy, open, and sustainable digital infrastructure in the public interest.
+        Driven by a software-first philosophy, this architecture ensures deterministic reproducibility by decoupling execution logic from mutable state through structural and cryptographic isolation. This open specification provides a roadmap where logical design dictates physical implementation—from software to hardware. By integrating energy efficiency with high interpretability, SSCCS establishes a foundation for sustainable, accountable computational infrastructures, ultimately transitioning logic into a transparent, verifiable, and accessible Intellectual Public Commons.
       </p>
+
 
       <h2>Key Technical Advantages</h2>
       <ul>
@@ -93,16 +89,16 @@ export default function Home() {
           </p>
           <ul>
             <li>
-              Whitepaper: <a href="https://ssccs.org/wp">PDF</a> / <a href="https://ssccs.org/wpw">HTML</a> Licensed under <i>CC BY-NC-ND 4.0</i>. DOI: <a href="https://doi.org/10.5281/zenodo.18759106">10.5281/zenodo.18759106</a>) via CERN/Zenodo, indexed by OpenAIRE.
+              Whitepaper: <a href={appendDateQuery("https://ssccs.org/wp")}>PDF</a> / <a href={appendDateQuery("https://ssccs.org/wpw")}>HTML</a> Licensed under <i>CC BY-NC-ND 4.0</i>. DOI: <a href={appendDateQuery("https://doi.org/10.5281/zenodo.18759106")}>10.5281/zenodo.18759106</a>) via CERN/Zenodo, indexed by OpenAIRE.
             </li>
             <li>
-              Official repository: <a href="https://github.com/ssccsorg">GitHub</a>. Licensed under <i>Apache 2.0</i>. Authenticated via GPG: <a href="https://keys.openpgp.org/search?q=BCCB196BADF50C99">BCCB196BADF50C99</a>.
+              Official repository: <a href={appendDateQuery("https://github.com/ssccsorg")}>GitHub</a>. Licensed under <i>Apache 2.0</i>. Authenticated via GPG: <a href={appendDateQuery("https://keys.openpgp.org/search?q=BCCB196BADF50C99")}>BCCB196BADF50C99</a>.
             </li>
             <li>
-              Governed by the <a href="https://ssccsorg.github.io/ssccs/legal">Foundational Charter and Statute</a> of the SSCCS Foundation (in formation).
+              Governed by the <a href={appendDateQuery("https://ssccsorg.github.io/ssccs/legal")}>Foundational Charter and Statute</a> of the SSCCS Foundation (in formation).
             </li>
             <li>
-              Provenance: Human-authored and AI-refined: linguistic and editorial review; full intellectual responsibility with author(s). All major outputs are <a href="https://ssccs.org/wpc2pa">C2PA-certified</a>.
+              Provenance: Human-authored and AI-refined: linguistic and editorial review; full intellectual responsibility with author(s). All major outputs are <a href={appendDateQuery("https://ssccs.org/wpc2pa")}>C2PA-certified</a>.
             </li>
           </ul>
 
@@ -133,10 +129,28 @@ export default function Home() {
   );
 }
 
+function appendDateQuery(url) {
+  // HTTP/HTTPS URL이 아닌 경우 변경하지 않음
+  if (!url.startsWith('http')) {
+    return url;
+  }
+  // 쿼리 문자열이 이미 있으면 변경하지 않음
+  if (url.includes('?')) {
+    return url;
+  }
+  // YYYYMMDD 형식의 현재 날짜 생성
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const day = String(now.getDate()).padStart(2, '0');
+  const dateStr = `${year}${month}${day}`;
+  return url + '?' + dateStr;
+}
+
 const PARTNERS = [
-  { name: "C2PA", href: "https://www.c2pa.org/", src: "https://c2pa.org/wp-content/uploads/sites/33/2025/05/c2pa_logo.svg", h: "40px" },
-  { name: "Open AIRE", href: "https://www.openaire.eu/", src: "./images/openaire.svg", h: "40px" },
-  { name: "CERN", href: "https://cernandsocietyfoundation.cern/projects/zenodo", src: "./images/cern.svg", h: "60px" }
+  { name: "C2PA", href: appendDateQuery("https://www.c2pa.org/"), src: appendDateQuery("https://c2pa.org/wp-content/uploads/sites/33/2025/05/c2pa_logo.svg"), h: "40px" },
+  { name: "Open AIRE", href: appendDateQuery("https://www.openaire.eu/"), src: appendDateQuery("./images/openaire.svg"), h: "40px" },
+  { name: "CERN", href: appendDateQuery("https://cernandsocietyfoundation.cern/projects/zenodo"), src: appendDateQuery("./images/cern.svg"), h: "60px" }
 ];
 
 const PartnerLogo = ({ href, src, alt, height }) => (
