@@ -1,17 +1,18 @@
 import ontology3d from './ontology3d.json';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import React, { useState, useEffect } from 'react';
+
 export default function Home() {
   return (
 
     <main style={{ maxWidth: '100%', width: 'clamp(800px, 90%, min(60%, 1000px))', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6', fontFamily: 'serif' }}>
 
-
       <nav style={{
         fontSize: '0.9rem',
         display: 'flex',
         justifyContent: 'center',
-        gap: '6px',
         marginBottom: "30px",
+        gap: '6px',
       }}>
         Whitepaper<a href="https://ssccs.org/wp">PDF</a><a href="https://ssccs.org/wpw">HTML</a>
         <span style={{ fontWeight: 'bold' }}>·</span>
@@ -19,7 +20,7 @@ export default function Home() {
         <a href="https://github.com/ssccsorg" >Repository</a>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
-        <a href="mailto:contact@ssccs.org" >Contact</a><a href="contact@ssccs.org-openpgp-public.asc" >PGP key</a>
+        <a href="mailto:contact@ssccs.org" >Contact</a><a href="https://keys.openpgp.org/search?q=0xF812D4374FEE96A1" >PGP Key</a>
 
       </nav>
 
@@ -30,87 +31,47 @@ export default function Home() {
       <hr style={{ margin: '30px 0', border: '0', borderTop: '1px solid #000' }} />
 
       <p>
-        SSCCS (Schema–Segment Composition Computing System) is an observation-driven
-        computing model and infrastructure specification that redefines computation as the traceable
-        projection of immutable Segments within a structured Scheme. While contemporary innovation focuses on material hardware shifts, SSCCS addresses fundamental inefficiencies of the
-        Von Neumann bottleneck at the logical layer. By formalizing computation as the simultaneous resolution of static potential under dynamic constraints rather than a sequence of state
-        mutations, the architecture reframes data movement, concurrency, and verifiability.
+        SSCCS (Schema–Segment Composition Computing System) is a non-profit research initiative developing a reliable and energy-efficient computing infrastructure for existing hardware. It addresses the scalability, security, and energy constraints inherent in conventional instruction-based, mutable-state architectures.
+      </p>
+
+      <p>
+        Instead of procedural instruction execution, SSCCS introduces a model where computation emerges from observing composed, immutable structural units. By making observation the sole computational event, the system achieves inherent parallelism, strong isolation, and predictable system behavior by design.
       </p>
 
 
       <BrowserOnly fallback={<div style={{ height: '540px' }}></div>}>
-        {() => {
-          const Plot = require('react-plotly.js').default;
-          const zoomRatio = 0.97
-          return (
-            <div style={{
-              width: '100%',
-              height: 'clamp(400px, 50vh, 600px)',
-              position: 'relative'
-            }}>
-              <Plot
-                data={ontology3d.data}
-                layout={{
-                  ...ontology3d.layout,
-                  title: {
-                    text: '*Data is the shadow cast by the collapse of possibility.',
-                    font: { size: 12, color: '#343434' },
-                    x: 0.5,
-                    y: 0.06
-                  },
-                  autosize: true,
-                  height: undefined,
-                  width: undefined,
-                  scene: {
-                    ...ontology3d.layout.scene,
-                    dragmode: 'turntable',
-                    camera: {
-                      eye: { x: -1.2 * 1 / zoomRatio, y: 1.5 * 1 / zoomRatio, z: 0.65 * 1 / zoomRatio },
-                      center: { x: 0, y: 0, z: -0.2 },
-                    },
-                    aspectratio: { x: 1, y: 1, z: 0.75 },
-                    xaxis: { title: '', showgrid: true },
-                    yaxis: { title: '', showgrid: true },
-                    zaxis: { title: '', showgrid: true },
-                  },
-                  margin: { l: 0, r: 0, b: 0, t: 0 },
-                  paper_bgcolor: 'rgba(0,0,0,0)',
-                  plot_bgcolor: 'rgba(0,0,0,0)',
-                }}
-                style={{ width: "100%", height: "100%" }}
-                useResizeHandler={true}
-                config={{ displayModeBar: false }}
-              />
-            </div>
-          );
-        }}
+        {() => <ResponsivePlot />}
       </BrowserOnly>
 
 
       <p>
-        The framework operates through a distinct ontology: Segments serve as immutable carriers of structured information, while Schemes define bounded structural contexts. Fields constitute relational topologies governed by dynamic constraints that dictate admissible configurations. Within this layer, computation is executed through Observation, which deterministically resolves these configurations into a Projection without altering underlying Segments. This structural approach inherently minimizes data movement, eliminates synchronization overhead, and enables implicit parallelism.
+        The project focuses on delivering an open-source software stack, including a compiler and runtime environment, that operates on conventional processors while supporting high-concurrency and distributed execution. Execution is constrained through policy-based sandboxes enforced at the binary level, enabling secure and verifiable processing without dependence on proprietary platforms.
       </p>
 
       <p>
-        Driven by a software-first philosophy, this architecture ensures deterministic reproducibility by completely decoupling execution logic from mutable state through structural and cryptographic isolation. This open specification, validated across diverse domains, provides a roadmap where logical design dictates physical implementation, spanning from software emulation to hardware-level support. By integrating intrinsic energy efficiency with high interpretability, SSCCS establishes a foundation for sustainable, accountable computational infrastructures, ultimately transitioning logic into a transparent, verifiable, and accessible Intellectual Public Commons.
+        Due to its observation-centric nature, the system emphasizes high memory utilization and low operational energy, making it suitable for energy-aware and AI-adjacent computing workloads. Expected outcomes include a public reference implementation, technical documentation, and demonstrable prototypes validating the approach.
       </p>
 
-      <h2>Core Values and Impact</h2>
+      <p>
+        Beyond software, SSCCS maintains a long-term research objective of providing architectural insights that may inform future computing hardware design, grounded in empirical validation on existing systems. The project aims to contribute foundational building blocks for trustworthy, open, and sustainable digital infrastructure in the public interest.
+      </p>
+
+      <h2>Key Technical Advantages</h2>
       <ul>
         <li>
-          Energy-efficient and parallel computation: Data remains stationary; only Projections move. Energy is concentrated at the moment of observation, supporting scalable AI and distributed workloads.
+          <strong>Inherent Parallelism & Isolation:</strong> Observation as the sole computational event enables predictable system behavior by design, eliminating traditional synchronization overhead.
         </li>
         <li>
-          Public accessibility and standardization: Open, language-agnostic specifications promote transparency and technological sovereignty. The open format preserves verifiability and enables long-term, interoperable standards.
+          <strong>Binary-Level Security:</strong> Policy-based sandboxing enforced at the binary level ensures secure processing without proprietary platform dependence.
         </li>
         <li>
-          Determinism and auditability: Immutable Segments and deterministic Observation provide full traceability, supporting high-trust domains like finance, healthcare, and public policy.
+          <strong>Resource Efficiency:</strong> High memory utilization and low operational energy consumption, optimized for AI-adjacent and distributed workloads.
         </li>
         <li>
-          Sustainable computational infrastructure: Structure-centric design minimizes environmental impact while supporting complex, transparent decision-making.
+          <strong>Open-Source Foundation:</strong> Production-ready compiler and runtime environment for conventional processors, contributing to the digital commons.
         </li>
         <li>
-          Secure isolation: Cryptographic identity of Segments and Schemes enforces boundaries, ensuring computations remain auditable and free from hidden interference.
+          <strong>Architectural Insights:</strong> Empirical data to inform future energy-aware hardware designs based on real-world validation.
         </li>
       </ul>
 
@@ -183,3 +144,63 @@ const PartnerLogo = ({ href, src, alt, height }) => (
     <img src={src} alt={alt} style={{ height, width: 'auto', display: 'block' }} />
   </a>
 );
+
+function ResponsivePlot() {
+  const [width, setWidth] = useState(
+    typeof window !== 'undefined' ? window.innerWidth : 1200
+  );
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const Plot = require('react-plotly.js').default;
+
+  const showLegend = width > 720;
+  const zoomRatio = 0.97;
+
+  return (
+    <div style={{
+      width: '100%',
+      height: 'clamp(400px, 50vh, 600px)',
+      position: 'relative'
+    }}>
+      <Plot
+        data={ontology3d.data}
+        layout={{
+          ...ontology3d.layout,
+          title: {
+            text: '*Data is the shadow cast by the collapse of possibility.',
+            font: { size: 12, color: '#343434' },
+            x: 0.5,
+            y: 0.06
+          },
+          autosize: true,
+          height: undefined,
+          width: undefined,
+          scene: {
+            ...ontology3d.layout.scene,
+            dragmode: 'turntable',
+            camera: {
+              eye: { x: -1.2 * 1 / zoomRatio, y: 1.5 * 1 / zoomRatio, z: 0.65 * 1 / zoomRatio },
+              center: { x: 0, y: 0, z: -0.2 },
+            },
+            aspectratio: { x: 1, y: 1, z: 0.75 },
+            xaxis: { title: '', showgrid: true },
+            yaxis: { title: '', showgrid: true },
+            zaxis: { title: '', showgrid: true },
+          },
+          margin: { l: 0, r: 0, b: 0, t: 0 },
+          paper_bgcolor: 'rgba(0,0,0,0)',
+          plot_bgcolor: 'rgba(0,0,0,0)',
+          showlegend: showLegend,
+        }}
+        style={{ width: "100%", height: "100%" }}
+        useResizeHandler={true}
+        config={{ displayModeBar: false }}
+      />
+    </div>
+  );
+}
