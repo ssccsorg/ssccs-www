@@ -1,7 +1,7 @@
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { isMobileSafari } from '../utils/detector';
-import { ResponsivePlot } from './ResponsivePlot';
+import { ResponsivePlot } from '../components/ResponsivePlot';
 
 export default function Home() {
   return (
