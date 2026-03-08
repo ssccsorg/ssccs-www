@@ -33,7 +33,7 @@ export default function Home() {
 
 
       <p>
-        SSCCS (Schema–Segment Composition Computing System) is an observation-driven computing model that redefines computation as the traceable projection of immutable Segments within a structured Scheme. While current hardware advances focus on physical improvements, SSCCS tackles the Von Neumann bottleneck at the logical layer. By formalizing computation as the resolution of static potential under dynamic constraints—rather than sequential state mutations—the architecture reframes data movement, concurrency, and verifiability.
+        SSCCS (Schema–Segment Composition Computing System) is an observation-driven computing model that challenges the current decades-old paradigm by redefining computation as the projection of static potential under dynamic constraints, rather than sequential instruction sequencing, state mutations, and data movement between memory and processor. This model treats time as merely one axis of multi-dimensional computation rather than an absolute sequence, employing a Geometric Manifold to ensure lossless interpretation and provide inherent structural isolation against interference.
       </p>
 
       <BrowserOnly fallback={<div style={{ height: '540px' }}></div>}>
@@ -41,7 +41,7 @@ export default function Home() {
           const svgUrl = useBaseUrl('/images/ontology3d.svg');
           if (isMobileSafari()) {
             return (
-              <div style={{ width: '100%', height: 'clamp(400px, 50vh, 600px)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+              <div style={{ width: '100%', height: 'clamp(400px, 50vh, 600px)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                 <img src={svgUrl} alt="SSCCS Ontology Structure" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                 <p style={{ fontSize: '12px', color: '#343434' }}>*Data is the shadow cast by the collapse of possibility.</p>
               </div>
@@ -55,12 +55,12 @@ export default function Home() {
 
 
       <p>
-        SSCCS embodies three core principles: Immutability (segments and schemes are immutable), Structural Integrity (computations follow predefined relationships), and Traceability (every projection is cryptographically verifiable). Its layered ontology—Segments, Schemes, Fields, and Projections—ensures information remains unchanged, operations transparent, and outcomes auditable.
+        Computation is formalized as the deterministic projection of immutable Segments and Schemes within dynamic Fields. Acting as mutable constraint units, Fields enable recursive composition and allow governance logic to be encrypted or sandboxed at the binary level. The compiler performs structural mapping, embedding logic directly into hardware topology to ensure stationary data (Logic-at-Rest) and minimize movement. This design innovation mitigates data movement overhead and enables inherent parallelism, targeting dramatic improvements in performance and energy efficiency. Security and cryptographic auditability are geometrically natural consequences of this immutable structure, rather than added features.
       </p>
 
 
       <p>
-        Driven by a software-first philosophy, this architecture ensures deterministic reproducibility by decoupling execution logic from mutable state through structural and cryptographic isolation. This open specification provides a roadmap where logical design dictates physical implementation—from software to hardware. By integrating energy efficiency with high interpretability, SSCCS establishes a foundation for sustainable, accountable computational infrastructures, ultimately transitioning logic into a transparent, verifiable, and accessible Intellectual Public Commons.
+        As a universal substrate, SSCCS provides a verifiable foundation for systems across domains—from AI to scientific computing to embedded systems. Driven by a software-first philosophy, this specification provides a roadmap where logical design dictates physical implementation, contrasting with current hardware advances that focus primarily on physical improvements. Ultimately, SSCCS aims to evolve into an open format at the language layer, transitioning logic into a transparent, accessible, and energy-efficient Intellectual Public Commons.
       </p>
 
 
