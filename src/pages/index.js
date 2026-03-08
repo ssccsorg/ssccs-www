@@ -1,6 +1,15 @@
-import ontology3d from './ontology3d.json';
 import BrowserOnly from '@docusaurus/BrowserOnly';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import ontology3d from './ontology3d.json';
+
+function isMobileSafari() {
+  if (typeof window === 'undefined') return false;
+  const ua = window.navigator.userAgent;
+  const isIOS = /iPad|iPhone|iPod/.test(ua);
+  const isSafari = /Safari/.test(ua) && !/Chrome/.test(ua);
+  return isIOS && isSafari;
+}
 
 export default function Home() {
   return (
@@ -17,10 +26,10 @@ export default function Home() {
         Whitepaper<a href={appendDateQuery("https://ssccs.org/wp")}>PDF</a><a href={appendDateQuery("https://ssccs.org/wpw")}>HTML</a>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
-        <a href={appendDateQuery("https://github.com/ssccsorg")} >Repository</a>
+        <a href={"https://github.com/ssccsorg"} >Repository</a>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
-        <a href={appendDateQuery("mailto:contact@ssccs.org")} >Contact</a><a href={appendDateQuery("https://keys.openpgp.org/search?q=0xF812D4374FEE96A1")} >PGP Key</a>
+        <a href={"mailto:contact@ssccs.org"} >Contact</a><a href={"https://keys.openpgp.org/search?q=0xF812D4374FEE96A1"} >PGP Key</a>
 
       </nav>
 
@@ -35,10 +44,21 @@ export default function Home() {
         SSCCS (Schema–Segment Composition Computing System) is an observation-driven computing model that redefines computation as the traceable projection of immutable Segments within a structured Scheme. While current hardware advances focus on physical improvements, SSCCS tackles the Von Neumann bottleneck at the logical layer. By formalizing computation as the resolution of static potential under dynamic constraints—rather than sequential state mutations—the architecture reframes data movement, concurrency, and verifiability.
       </p>
 
-
-
       <BrowserOnly fallback={<div style={{ height: '540px' }}></div>}>
-        {() => <ResponsivePlot />}
+        {() => {
+          const svgUrl = useBaseUrl('/images/ontology3d.svg');
+          if (isMobileSafari()) {
+            return (
+              <div style={{ width: '100%', height: 'clamp(400px, 50vh, 600px)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                <img src={svgUrl} alt="SSCCS Ontology Structure" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                <p style={{ fontSize: '12px', color: '#343434' }}>*Data is the shadow cast by the collapse of possibility.</p>
+              </div>
+            );
+          } else {
+            return <ResponsivePlot />
+          }
+        }
+        }
       </BrowserOnly>
 
 
@@ -92,10 +112,10 @@ export default function Home() {
               Whitepaper: <a href={appendDateQuery("https://ssccs.org/wp")}>PDF</a> / <a href={appendDateQuery("https://ssccs.org/wpw")}>HTML</a> Licensed under <i>CC BY-NC-ND 4.0</i>. DOI: <a href={appendDateQuery("https://doi.org/10.5281/zenodo.18759106")}>10.5281/zenodo.18759106</a>) via CERN/Zenodo, indexed by OpenAIRE.
             </li>
             <li>
-              Official repository: <a href={appendDateQuery("https://github.com/ssccsorg")}>GitHub</a>. Licensed under <i>Apache 2.0</i>. Authenticated via GPG: <a href={appendDateQuery("https://keys.openpgp.org/search?q=BCCB196BADF50C99")}>BCCB196BADF50C99</a>.
+              Official repository: <a href={"https://github.com/ssccsorg"}>GitHub</a>. Licensed under <i>Apache 2.0</i>. Authenticated via GPG: <a href={"https://keys.openpgp.org/search?q=BCCB196BADF50C99"}>BCCB196BADF50C99</a>.
             </li>
             <li>
-              Governed by the <a href={appendDateQuery("https://ssccsorg.github.io/ssccs/legal")}>Foundational Charter and Statute</a> of the SSCCS Foundation (in formation).
+              Governed by the <a href={"https://ssccsorg.github.io/ssccs/legal"}>Foundational Charter and Statute</a> of the SSCCS Foundation (in formation).
             </li>
             <li>
               Provenance: Human-authored and AI-refined: linguistic and editorial review; full intellectual responsibility with author(s). All major outputs are <a href={appendDateQuery("https://ssccs.org/wpc2pa")}>C2PA-certified</a>.
@@ -130,15 +150,12 @@ export default function Home() {
 }
 
 function appendDateQuery(url) {
-  // HTTP/HTTPS URL이 아닌 경우 변경하지 않음
   if (!url.startsWith('http')) {
     return url;
   }
-  // 쿼리 문자열이 이미 있으면 변경하지 않음
   if (url.includes('?')) {
     return url;
   }
-  // YYYYMMDD 형식의 현재 날짜 생성
   const now = new Date();
   const year = now.getFullYear();
   const month = String(now.getMonth() + 1).padStart(2, '0');
