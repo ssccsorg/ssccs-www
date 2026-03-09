@@ -33,7 +33,7 @@ export default function Home() {
 
 
       <p>
-        SSCCS (Schema–Segment Composition Computing System) is an observation-driven computing model that challenges the current decades-old paradigm by redefining computation as the projection of static potential under dynamic constraints, rather than sequential instruction sequencing, state mutations, and data movement between memory and processor. This model treats time as merely one axis of multi-dimensional computation rather than an absolute sequence, employing a Geometric Manifold to ensure lossless interpretation and provide inherent structural isolation against interference.
+        SSCCS (Schema–Segment Composition Computing System) is an observation-driven computing model that redefines computation as the realization of static potential under dynamic constraints, rather than sequential instruction sequencing, state mutations, and data movement between memory and processor. This model treats time as merely one axis of multi-dimensional computation rather than an absolute sequence, employing a Geometric Manifold to ensure lossless interpretation and provide inherent structural isolation against interference.
       </p>
 
       <BrowserOnly fallback={<div style={{ height: '540px' }}></div>}>
