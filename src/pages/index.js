@@ -2,26 +2,36 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { isMobileSafari } from '../utils/detector';
 import { ResponsivePlot } from '../components/ResponsivePlot';
+import styles from './index.module.css';
 
 export default function Home() {
   return (
 
     <main style={{ maxWidth: '100%', width: 'clamp(800px, 90%, min(60%, 1000px))', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6', fontFamily: 'serif' }}>
 
-      <nav style={{
-        fontSize: '0.9rem',
-        display: 'flex',
-        justifyContent: 'center',
-        marginBottom: "30px",
-        gap: '6px',
-      }}>
-        Whitepaper<a href={appendDateQuery("https://ssccs.org/wp")}>PDF</a><a href={appendDateQuery("https://ssccs.org/wpw")}>HTML</a>
+      <nav className={styles.nav}>
+
+        
+
+        <span className={styles.group}>
+          <a href={appendDateQuery("https://ssccsorg.github.io/ssccs/proposal")}>Proposal</a>
+        </span>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
-        <a href={"https://github.com/ssccsorg"} >Repository</a>
+        
+        <span className={styles.group}>
+          Whitepaper <a href={appendDateQuery("https://ssccs.org/wp")}>PDF</a> <a href={appendDateQuery("https://ssccs.org/wpw")}>HTML</a>
+        </span>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
-        <a href={"mailto:contact@ssccs.org"} >Contact</a><a href={"https://keys.openpgp.org/search?q=0xF812D4374FEE96A1"} >PGP Key</a>
+        <span className={styles.group}>
+          <a href={"https://github.com/ssccsorg"} >Repository</a>
+        </span>
+        <span style={{ fontWeight: 'bold' }}>·</span>
+
+        <span className={styles.group}>
+          <a href={"mailto:contact@ssccs.org"} >Contact</a> <a href={"https://keys.openpgp.org/search?q=0xF812D4374FEE96A1"} >PGP Key</a>
+        </span>
 
       </nav>
 
