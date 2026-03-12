@@ -11,16 +11,18 @@ export default function Home() {
 
       <nav className={styles.nav}>
 
-        
-
         <span className={styles.group}>
-          <a href={appendDateQuery("https://ssccsorg.github.io/ssccs/proposal")}>Proposal</a>
+          <a href={appendDateQuery("https://docs.ssccs.org")}>Manifesto</a>
         </span>
         <span style={{ fontWeight: 'bold' }}>·</span>
-
         
         <span className={styles.group}>
           <a href={appendDateQuery("https://ssccs.org/wp")}>Whitepaper</a> (<a href={appendDateQuery("https://ssccs.org/wpw")}>HTML</a>)
+        </span>
+        <span style={{ fontWeight: 'bold' }}>·</span>
+
+        <span className={styles.group}>
+          <a href={appendDateQuery("https://docs.ssccs.org/proposal")}>Proposal</a> & <a href={appendDateQuery("https://github.com/ssccsorg/ssccs/blob/main/docs/GUIDE.md")}>Guide</a>
         </span>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
@@ -117,7 +119,7 @@ export default function Home() {
               Official repository: <a href={"https://github.com/ssccsorg"}>GitHub</a>. Licensed under <i>Apache 2.0</i>. Authenticated via GPG: <a href={"https://keys.openpgp.org/search?q=BCCB196BADF50C99"}>BCCB196BADF50C99</a>.
             </li>
             <li>
-              Governed by the <a href={"https://ssccsorg.github.io/ssccs/legal"}>Foundational Charter and Statute</a> of the SSCCS Foundation (in formation).
+              Governed by the <a href={"https://docs.ssccs.org/legal"}>Foundational Charter and Statute</a> of the SSCCS Foundation (in formation).
             </li>
             <li>
               Provenance: Human-authored and AI-refined: linguistic and editorial review; full intellectual responsibility with author(s). All major outputs are <a href={appendDateQuery("https://ssccs.org/wpc2pa")}>C2PA-certified</a>.
