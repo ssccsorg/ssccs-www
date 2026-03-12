@@ -20,7 +20,7 @@ export default function Home() {
 
         
         <span className={styles.group}>
-          Whitepaper <a href={appendDateQuery("https://ssccs.org/wp")}>PDF</a> <a href={appendDateQuery("https://ssccs.org/wpw")}>HTML</a>
+          <a href={appendDateQuery("https://ssccs.org/wp")}>Whitepaper</a> (<a href={appendDateQuery("https://ssccs.org/wpw")}>HTML</a>)
         </span>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
@@ -30,7 +30,7 @@ export default function Home() {
         <span style={{ fontWeight: 'bold' }}>·</span>
 
         <span className={styles.group}>
-          <a href={"mailto:contact@ssccs.org"} >Contact</a> <a href={"https://keys.openpgp.org/search?q=0xF812D4374FEE96A1"} >PGP Key</a>
+          <a href={"mailto:contact@ssccs.org"} >Contact</a> (<a href={"https://keys.openpgp.org/search?q=0xF812D4374FEE96A1"} >PGP Key</a>)
         </span>
 
       </nav>
