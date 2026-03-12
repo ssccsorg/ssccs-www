@@ -22,12 +22,12 @@ export default function Home() {
         <span style={{ fontWeight: 'bold' }}>·</span>
 
         <span className={styles.group}>
-          <a href={appendDateQuery("https://docs.ssccs.org/proposal")}>Proposal</a> & <a href={appendDateQuery("https://github.com/ssccsorg/ssccs/blob/main/docs/GUIDE.md")}>Guide</a>
+          <a href={"https://github.com/ssccsorg"} >Repository</a>
         </span>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
         <span className={styles.group}>
-          <a href={"https://github.com/ssccsorg"} >Repository</a>
+          <a href={appendDateQuery("https://docs.ssccs.org/proposal")}>Proposal</a> / <a href={appendDateQuery("https://github.com/ssccsorg/ssccs/blob/main/docs/GUIDE.md")}>Guide</a>
         </span>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
