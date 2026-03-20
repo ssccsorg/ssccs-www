@@ -28,7 +28,7 @@ export function ResponsivePlot() {
         layout={{
           ...ontology3d.layout,
           title: {
-            text: '*Data is the shadow cast by the collapse of possibility.',
+            text: '*Loops disappear into layout. Data, or state, is the shadow cast by collapsed possibility.',
             font: { size: 12, color: '#343434' },
             x: 0.5,
             y: 0.06
