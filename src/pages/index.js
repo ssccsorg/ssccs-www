@@ -7,7 +7,7 @@ import styles from './index.module.css';
 export default function Home() {
   return (
 
-    <main style={{ maxWidth: '100%', width: 'clamp(800px, 90%, min(60%, 1000px))', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6'}}>
+    <main style={{ maxWidth: '100%', width: 'clamp(800px, 90%, min(60%, 1000px))', margin: '0 auto', padding: '40px 20px', color: '#000', lineHeight: '1.6' }}>
 
       <nav className={styles.nav}>
 
@@ -15,7 +15,7 @@ export default function Home() {
           <a href={appendDateQuery("https://docs.ssccs.org")}>Manifesto</a>
         </span>
         <span style={{ fontWeight: 'bold' }}>·</span>
-        
+
         <span className={styles.group}>
           <a href={appendDateQuery("https://docs.ssccs.org/whitepaper.pdf")}>Whitepaper</a> / <a href={appendDateQuery("https://docs.ssccs.org/whitepaper")}>HTML</a>
         </span>
@@ -27,7 +27,7 @@ export default function Home() {
         <span style={{ fontWeight: 'bold' }}>·</span>
 
         <span className={styles.group}>
-          <a href={appendDateQuery("https://docs.ssccs.org/proposal")}>Proposal</a> / <a href={appendDateQuery("https://github.com/ssccsorg/ssccs/blob/main/docs/GUIDE.md")}>Guide</a>
+          <a href={appendDateQuery("https://docs.ssccs.org/proposal")}>Proposal</a> / <a href={appendDateQuery("https://github.com/ssccsorg/ssccs/blob/main/docs/GUIDE.md")}>Guide</a> / <a href={appendDateQuery("https://github.com/ssccsorg/ssccs/blob/main/docs/roadmap/roadmap.md")}>Roadmap</a>
         </span>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
@@ -45,7 +45,7 @@ export default function Home() {
 
 
       <p>
-          SSCCS (Schema–Segment Composition Computing System) is an observation-driven computing model that defines deterministic computation as the realization of structured potential under dynamic constraints. In an era of increasing complexity and distributed systems, this contrasts with the traditional von Neumann approach of instruction sequencing, state mutations, and data movement between memory and processor, and the compiler's role shifts from translating code to optimizing the topology of data movement. This model treats time as merely one axis of multi-dimensional computation rather than an absolute sequence, with inherent structural isolation against interference and lossless interpretation via a Geometric Manifold.
+        SSCCS (Schema–Segment Composition Computing System) is an observation-driven computing model that defines deterministic computation as the realization of structured potential under dynamic constraints. In an era of increasing complexity and distributed systems, this contrasts with the traditional von Neumann approach of instruction sequencing, state mutations, and data movement between memory and processor, and the compiler's role shifts from translating code to optimizing the topology of data movement. This model treats time as merely one axis of multi-dimensional computation rather than an absolute sequence, with inherent structural isolation against interference and lossless interpretation via a Geometric Manifold.
 
       </p>
 
@@ -91,12 +91,12 @@ export default function Home() {
         </li>
       </ul>
 
-<p></p>
-       <h2>Target Validation Domains</h2>
+      <p></p>
+      <h2>Target Validation Domains</h2>
 
 
       <p>
-        For eighty years, computing has followed the same pattern: fetch, move data from memory to processor, execute, store. Today, data movement consumes 60–80% of energy in AI accelerators, with AI data centers projected to consume as much power as California’s entire grid by 2027. Beyond energy, opaque AI models cause unacceptable risk in critical applications—autonomous vehicle fatalities, diagnostic errors, financial flash crashes—with documented damages exceeding $100 billion. 
+        For eighty years, computing has followed the same pattern: fetch, move data from memory to processor, execute, store. Today, data movement consumes 60–80% of energy in AI accelerators, with AI data centers projected to consume as much power as California’s entire grid by 2027. Beyond energy, opaque AI models cause unacceptable risk in critical applications—autonomous vehicle fatalities, diagnostic errors, financial flash crashes—with documented damages exceeding $100 billion.
       </p>
 
 
@@ -115,13 +115,7 @@ export default function Home() {
           AI at scale means moving terabytes of weights through limited memory bandwidth. SSCCS keeps weights stationary and observes them in place. With AI power demand projected to reach 23 GW by 2026, eliminating data movement is no longer optional—it’s essential.
         </li>
         <li>
-          Climate modeling requires processing massive grids with complex dependencies. SSCCS encodes those dependencies as geometry, cutting redundant data movement.
-        </li>
-        <li>
-          Autonomous systems need verifiable real-time decisions. SSCCS provides deterministic outputs that are auditable by design, not retroactively.
-        </li>
-        <li>
-          Scientific computing faces the same data movement wall. As datasets grow, I/O energy and latency dominate runtime.
+          Climate modeling, autonomous systems, and scientific computing each contend with the data movement wall in distinct but equally critical ways—processing massive, interdependent grids; requiring deterministic, auditable real‑time decisions; and managing datasets where I/O energy and latency dominate. SSCCS meets these challenges by encoding complex dependencies directly into geometry, delivering verifiable outputs by design, and fundamentally eliminating the energy cost of data movement.
         </li>
       </ul>
 
