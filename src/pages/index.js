@@ -27,7 +27,7 @@ export default function Home() {
         <span style={{ fontWeight: 'bold' }}>·</span>
 
         <span className={styles.group}>
-          <a href={appendDateQuery("https://docs.ssccs.org/proposal")}>Proposal</a> / <a href={appendDateQuery("https://github.com/ssccsorg/ssccs/blob/main/docs/GUIDE.md")}>Guide</a> / <a href={appendDateQuery("https://github.com/ssccsorg/ssccs/blob/main/docs/roadmap/roadmap.md")}>Roadmap</a>
+          <a href={appendDateQuery("https://docs.ssccs.org/proposal")}>Proposal</a> / <a href={appendDateQuery("https://docs.ssccs.org/report")}>Diagnosis</a> / <a href={appendDateQuery("https://github.com/ssccsorg/ssccs/blob/main/docs/GUIDE.md")}>Guide</a>
         </span>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
