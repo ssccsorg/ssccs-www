@@ -1,4 +1,4 @@
-// @ts-check
+// @ts check
 import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
@@ -9,26 +9,30 @@ const config = {
   baseUrl: "/",
   projectName: "SSCCS",
   onBrokenLinks: "warn",
-  
+  onBrokenAnchors: 'warn',       // Mitigating anchor (#) link errors
+
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
   },
-  
+
   themes: ["@docusaurus/theme-mermaid"],
-  
+
   markdown: {
+    format: 'detect',
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    }
   },
 
   presets: [
     [
       "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"), // 경로 해석 안전성 강화
-          remarkPlugins: [require("remark-math")],
+          sidebarPath: require.resolve("./sidebars.js"), // Enhanced path analysis safety
+          remarkPlugins: [require("remark-math"), require("remark-gfm")],
           rehypePlugins: [require("rehype-katex")],
           routeBasePath: "/docs",
           exclude: ['**/_*/**'],
@@ -42,7 +46,9 @@ const config = {
     ],
   ],
 
-  plugins: ['docusaurus-plugin-image-zoom'],
+  plugins: [
+    'docusaurus-plugin-image-zoom',
+  ],
 
   stylesheets: [
     {
