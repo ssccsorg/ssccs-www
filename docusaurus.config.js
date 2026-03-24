@@ -76,7 +76,7 @@ const config = {
       ],
     },
     prism: {
-      theme: prismThemes.ultramin,
+      theme: prismThemes.vsLight,
       darkTheme: prismThemes.vsDark,
     },
     zoom: {
