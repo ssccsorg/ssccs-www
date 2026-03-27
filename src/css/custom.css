@@ -52,3 +52,7 @@ a:link img, a:visited img { border-style: none }
   text-decoration: underline;
   text-underline-offset: 0.2rem;
 }
+
+.menu__link {
+  text-transform: capitalize;
+}
