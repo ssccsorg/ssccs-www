@@ -1,6 +1,6 @@
 # Diagnosis Report: Technical Assessment & Strategic Roadmap
 SSCCS Foundation
-2026-03-27
+2026-03-29
 
 ## Executive Summary
 
@@ -824,9 +824,9 @@ the project’s next phase, ensuring that SSCCS becomes:
 
 ------------------------------------------------------------------------
 
-© 2026 [SSCCS Foundation](https://ssccs.org) — A non-profit research
-initiative, formalized through global standards and substantiated by its
-cryptographic authenticity.
+© 2026 [SSCCS Foundation](https://ssccs.org) — A non-profit research and
+engineering initiative building a computing model and compiler
+infrastructure.
 
 - Whitepaper: [PDF](https://ssccs.org/wp) /
   [HTML](https://ssccs.org/wpw) DOI:
