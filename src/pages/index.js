@@ -17,7 +17,13 @@ export default function Home() {
         <span style={{ fontWeight: 'bold' }}>·</span>
 
         <span className={styles.group}>
-          <a href={appendDateQuery("https://docs.ssccs.org/DIRECTION.html")}>Our Direction</a> · <a href={appendDateQuery("https://ssccs.org/wp")}>Whitepaper</a>(<a href={appendDateQuery("https://ssccs.org/wpw")}>HTML</a>) · <a href={appendDateQuery("https://ssccs.org/proposal")}>Proposal</a> 
+          <a href={appendDateQuery("https://docs.ssccs.org/DIRECTION.html")}>Project Direction</a>
+        </span>
+
+        <span style={{ fontWeight: 'bold' }}>·</span>
+
+        <span className={styles.group}>
+          <a href={appendDateQuery("https://ssccs.org/wp")}>Whitepaper</a> / <a href={appendDateQuery("https://ssccs.org/proposal")}>Proposal</a> 
         </span>
 
         <span style={{ fontWeight: 'bold' }}>·</span>
