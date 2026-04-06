@@ -12,22 +12,18 @@ export default function Home() {
       <nav className={styles.nav}>
 
         <span className={styles.group}>
-          <a href={appendDateQuery("https://docs.ssccs.org")}>Manifesto</a>
+          <a href={"https://docs.ssccs.org"} >Documentation</a>
         </span>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
         <span className={styles.group}>
-          <a href={appendDateQuery("https://docs.ssccs.org/whitepaper.pdf")}>Whitepaper</a> / <a href={appendDateQuery("https://docs.ssccs.org/whitepaper")}>HTML</a>
+          <a href={appendDateQuery("https://docs.ssccs.org/DIRECTION.html")}>Our Direction</a> · <a href={appendDateQuery("https://ssccs.org/wp")}>Whitepaper</a>(<a href={appendDateQuery("https://ssccs.org/wpw")}>HTML</a>) · <a href={appendDateQuery("https://ssccs.org/proposal")}>Proposal</a> 
         </span>
+
         <span style={{ fontWeight: 'bold' }}>·</span>
 
         <span className={styles.group}>
-          <a href={"https://github.com/ssccsorg"} >Repository</a> / <a href={"/docs/guide"} >Docs</a>
-        </span>
-        <span style={{ fontWeight: 'bold' }}>·</span>
-
-        <span className={styles.group}>
-          <a href={appendDateQuery("https://docs.ssccs.org/proposal")}>Proposal</a> / <a href={appendDateQuery("/docs/DIRECTION")}>Direction</a>
+          <a href={"https://github.com/ssccsorg"} >Repository</a>
         </span>
         <span style={{ fontWeight: 'bold' }}>·</span>
 
@@ -137,16 +133,16 @@ export default function Home() {
           </p>
           <ul>
             <li>
-              Whitepaper: <a href={appendDateQuery("https://docs.ssccs.org/whitepaper.pdf")}>PDF</a> / <a href={appendDateQuery("https://docs.ssccs.org/whitepaper")}>HTML</a> Licensed under <i>CC BY-NC-ND 4.0</i>. DOI: <a href={appendDateQuery("https://doi.org/10.5281/zenodo.18759106")}>10.5281/zenodo.18759106</a> via CERN/Zenodo, indexed by OpenAIRE.
+              Whitepaper: <a href={appendDateQuery("https://ssccs.org/wp")}>PDF</a> / <a href={appendDateQuery("https://ssccs.org/wpw")}>HTML</a> Licensed under <i>CC BY-NC-ND 4.0</i>. DOI: <a href={appendDateQuery("https://doi.org/10.5281/zenodo.18759106")}>10.5281/zenodo.18759106</a> via CERN/Zenodo, indexed by OpenAIRE.
             </li>
             <li>
               Official repository: <a href={"https://github.com/ssccsorg"}>GitHub</a>. Licensed under <i>Apache 2.0</i>. Authenticated via GPG: <a href={"https://keys.openpgp.org/search?q=BCCB196BADF50C99"}>BCCB196BADF50C99</a>.
             </li>
             <li>
-              Governed by the <a href={"https://docs.ssccs.org/legal"}>Foundational Charter and Statute</a> of the SSCCS Foundation (in formation).
+              Governed by the <a href={"https://ssccs.org/legal"}>Foundational Charter and Statute</a> of the SSCCS Foundation (in formation).
             </li>
             <li>
-              Provenance: Human-authored and AI-refined: linguistic and editorial review; full intellectual responsibility with author(s). All major outputs are <a href={appendDateQuery("https://docs.ssccs.org/whitepaper.pdfc2pa")}>C2PA-certified</a>.
+              Provenance: Human-authored and AI-refined: linguistic and editorial review; full intellectual responsibility with author(s). All major outputs are <a href={appendDateQuery("https://ssccs.org/wpc2pa")}>C2PA-certified</a>.
             </li>
           </ul>
 
