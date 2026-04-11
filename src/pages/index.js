@@ -125,7 +125,7 @@ export default function Home() {
       <h2>Collaboration</h2>
 
       <p>
-        SSCCS is a non‑profit, open‑source initiative in its pre‑incorporation phase, operating with a dual‑track model. We welcome partnerships from academia, industry, and public institutions worldwide—any nation with aligned public‑interest programs. We are currently seeking strategic funds to expand the core compiler team, complete the reference implementation, and establish legal governance. Opportunities include research collaboration, software toolchain development, and strategic guidance.
+        SSCCS is an open-source computing systems initiative in its pre‑incorporation phase, operating with a dual‑track model. We welcome partnerships from academia, industry, and public institutions worldwide—any nation with aligned public‑interest programs. We are currently seeking strategic funds to expand the core compiler team, complete the reference implementation, and establish legal governance. Opportunities include research collaboration, software toolchain development, and strategic guidance.
       </p>
 
       <hr style={{ margin: '30px 0', border: '0', borderTop: '1px solid #000' }} />
@@ -135,7 +135,7 @@ export default function Home() {
       }}>
         <section>
           <p>
-            © 2026 SSCCS Foundation — A non-profit research initiative, formalized through global standards and substantiated by its cryptographic authenticity.
+            © 2026 SSCCS Foundation — Open-source computing systems initiative building a computing model, software compiler infrastructure, and open hardware architecture.
           </p>
           <ul>
             <li>
