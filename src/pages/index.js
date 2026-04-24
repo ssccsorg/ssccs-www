@@ -25,6 +25,8 @@ export default function Home() {
         <span className={styles.group}>
           <a href={appendDateQuery("https://ssccs.org/zenodo")}>Whitepaper</a>
         </span>
+
+        <span style={{ fontWeight: 'bold' }}>·</span>
         
         <span className={styles.group}>
           <a href={appendDateQuery("https://ssccs.org/proposal")}>Proposal</a> 
@@ -152,7 +154,7 @@ export default function Home() {
               Governed by the <a href={"https://ssccs.org/legal"}>Foundational Charter and Statute</a> of the SSCCS Foundation (in formation).
             </li>
             <li>
-              Provenance: Human-authored and AI-refined: linguistic and editorial review; full intellectual responsibility with author(s). All major outputs are <a href={appendDateQuery("https://ssccs.org/wpc2pa")}>C2PA-certified</a>.
+              Provenance: Human-in-Command, AI-assisted. Full intellectual responsibility with author(s), <a href="https://ssccs.org/wpc2pa">C2PA-certified</a>. Aligns with <a href="https://www.iso.org/committee/6794475.html">ISO/IEC JTC 1/SC 42</a> human‑machine teaming frameworks.
             </li>
           </ul>
 
