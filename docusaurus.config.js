@@ -92,4 +92,21 @@ const config = {
   },
 };
 
-export default config;
+export default {
+  ...config,
+  plugins: [
+    ...(config.plugins || []),
+    function suppressNodeWarnings() {
+      return {
+        name: 'suppress-node-warnings',
+        configureWebpack() {
+          return {
+            ignoreWarnings: [
+              { module: /vscode-languageserver-types/ },
+            ]
+          };
+        },
+      };
+    },
+  ],
+};
