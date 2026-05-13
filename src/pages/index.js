@@ -23,7 +23,7 @@ export default function Home() {
         <span style={{ fontWeight: "bold" }}>·</span>
 
         <span className={styles.group}>
-          <a href={appendDateQuery("https://docs.ssccs.org/direction.html")}>
+          <a href={appendDateQuery("https://docs.ssccs.org/direction")}>
             Direction
           </a>
         </span>
@@ -83,7 +83,7 @@ export default function Home() {
         computing systems initiative building a complete stack from a novel
         computing model, through a software compiler infrastructure, to an open
         hardware architecture. We are under an open‑core model by our{" "}
-        <a href="https://docs.ssccs.org/direction.html">
+        <a href="https://docs.ssccs.org/direction">
           operational direction
         </a>{" "}
         and <a href="https://docs.ssccs.org/philosophy/">philosophy</a>.
