@@ -41,10 +41,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: "npm"
-          cache-dependency-path: package-lock.json
+
+      - name: Cache node_modules
+        id: cache-npm
+        uses: actions/cache@v5
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
 
       - name: Install dependencies
+        if: steps.cache-npm.outputs.cache-hit != 'true'
         run: npm ci
 
       - name: Build Docusaurus site
@@ -56,13 +62,35 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - name: Compute cache key
+        id: cache-key
+        run: |
+          find docs src static sidebars.js docusaurus.config.js package.json package-lock.json \
+            -type f | sort | xargs sha256sum | sha256sum | cut -d' ' -f1 > /tmp/cache_key.txt
+          echo "key=$(cat /tmp/cache_key.txt)" >> $GITHUB_OUTPUT
+
+      - name: Cache Docusaurus build artifacts
+        uses: actions/cache@v5
+        with:
+          path: |
+            .docusaurus
+          key: ${{ runner.os }}-docusaurus-${{ steps.cache-key.outputs.key }}
+          restore-keys: |
+            ${{ runner.os }}-docusaurus-
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: "npm"
-          cache-dependency-path: package-lock.json
+
+      - name: Cache node_modules
+        id: cache-npm
+        uses: actions/cache@v5
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
 
       - name: Install dependencies
+        if: steps.cache-npm.outputs.cache-hit != 'true'
         run: npm ci
 
       - name: Build Docusaurus site
