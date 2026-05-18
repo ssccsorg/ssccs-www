@@ -23,6 +23,14 @@ export default function Home() {
         <span style={{ fontWeight: "bold" }}>·</span>
 
         <span className={styles.group}>
+          <a href={appendDateQuery("https://ssccs.org/philosophy")}>
+            Philosophy
+          </a>
+        </span>
+
+        <span style={{ fontWeight: "bold" }}>·</span>
+        
+        <span className={styles.group}>
           <a href={appendDateQuery("https://docs.ssccs.org/direction")}>
             Direction
           </a>
@@ -37,14 +45,9 @@ export default function Home() {
         <span style={{ fontWeight: "bold" }}>·</span>
 
         <span className={styles.group}>
-          <a href={appendDateQuery("https://ssccs.org/proposal")}>Proposal</a>
-        </span>
-
-        <span style={{ fontWeight: "bold" }}>·</span>
-
-        <span className={styles.group}>
           <a href={"https://github.com/ssccsorg"}>Repository</a>
         </span>
+        
         <span style={{ fontWeight: "bold" }}>·</span>
 
         <span className={styles.group}>
