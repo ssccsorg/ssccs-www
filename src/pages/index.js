@@ -220,14 +220,14 @@ export default function Home() {
           connects heterogeneous knowledge into a unified, queryable structure.
         </li>
         <li>
-          <a href="https://docs.ssccs.org/proposal/aws.html">
+          <a href="https://docs.ssccs.org/partnerships/aws.html">
             Forging strategic partnerships
           </a>
           : with global infrastructure leaders to enhance the scalability and
           computational efficiency of autonomous research environments.
         </li>
         <li>
-          <a href="https://docs.ssccs.org/proposal/openhw_integration.html">
+          <a href="https://docs.ssccs.org/partnerships/openhw_integration.html">
             Hardware validation
           </a>
           : hased prototyping from software emulation to FPGA deployment, with a
