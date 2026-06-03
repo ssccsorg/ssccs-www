@@ -29,7 +29,7 @@ export default function Home() {
         <span style={{ fontWeight: "bold" }}>·</span>
         
         <span className={styles.group}>
-          <a href={"https://docs.ssccs.org/projects/"}>Projects</a>
+          <a href={"https://docs.ssccs.org/projects/"}>Ecosystem</a>
         </span>
         
         <span style={{ fontWeight: "bold" }}>·</span>
@@ -59,27 +59,20 @@ export default function Home() {
       />
 
       <p>
-        SSCCS (Schema–Segment Composition Computing System) is an
-        observation‑driven computing model that redefines computation as the
-        collapse of structured potential: immutable Segments arranged by
+        SSCCS (Schema–Segment Composition Computing System) is an observation‑driven computing model that redefines computation as the
+        collapse of structured potential, and its full stack silicon compiler infrastructur from technical specifications, through a software compiler infrastructure, to an open
+        hardware architecture. Immutable Segments arranged by
         Schemes, projected through Fields under their dynamic constraints and
         Observation. State or data is the result of the projection, and time is
-        just a coordinate. Parallelism and verifiability emerge naturally from
-        structure.
+        one of coordinates. Therefore parallelism and verifiability emerge naturally from structure, have linear scalability and energy consumption.
       </p>
 
       <p>
-        This project is from the SSCCS Foundation (in formation): an{" "}
-        <a href="https://github.com/ssccsorg/ssccs/graphs/traffic">
-          open‑source
-        </a>{" "}
-        computing systems initiative building a complete stack from a novel
-        computing model, through a software compiler infrastructure, to an open
-        hardware architecture. We are under an open‑core model by our{" "}
+        This project is from the <a href="https://docs.ssccs.org/legal/">SSCCS Foundation</a> (in formation): an open‑source computing systems initiative building a complete technical artifects. We are under an open‑core model by our{" "}
         <a href="https://docs.ssccs.org/direction">
           operational direction
         </a>{" "}
-        and <a href="https://docs.ssccs.org/philosophy/">philosophy</a>.
+        and <a href="https://docs.ssccs.org/philosophy/">philosophy</a>. The model validation is actively materializing by the open project ecosystem powered by <a href="http://docs.ssccs.org/projects/nexus">neXus</a> and the future open toolchain.
       </p>
 
       <BrowserOnly fallback={<div style={{ height: "540px" }}></div>}>
