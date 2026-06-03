@@ -60,19 +60,18 @@ export default function Home() {
 
       <p>
         SSCCS (Schema–Segment Composition Computing System) is an observation‑driven computing model that redefines computation as the
-        collapse of structured potential, and its full stack silicon compiler infrastructur from technical specifications, through a software compiler infrastructure, to an open
-        hardware architecture. Immutable Segments arranged by
+        collapse of structured potential. Immutable Segments arranged by
         Schemes, projected through Fields under their dynamic constraints and
         Observation. State or data is the result of the projection, and time is
-        one of coordinates. Therefore parallelism and verifiability emerge naturally from structure, have linear scalability and energy consumption.
+        one of coordinates. Therefore parallelism and verifiability emerge naturally from structure, have near-linear scalability and energy consumption.
       </p>
 
       <p>
-        This project is from the <a href="https://docs.ssccs.org/legal/">SSCCS Foundation</a> (in formation): an open‑source computing systems initiative building a complete technical artifects. We are under an open‑core model by our{" "}
+        This project is from the <a href="https://docs.ssccs.org/legal/">SSCCS Foundation</a> (in formation): an open‑source computing systems initiative building a complete stack of silicon compiler infrastructure from technical specifications, through a software compiler toolchain to an open hardware architecture. We are under an open‑core model by our{" "}
         <a href="https://docs.ssccs.org/direction">
           operational direction
         </a>{" "}
-        and <a href="https://docs.ssccs.org/philosophy/">philosophy</a>. The model validation is actively materializing by the open project ecosystem powered by <a href="http://docs.ssccs.org/projects/nexus">neXus</a> and the future open toolchain.
+        and <a href="https://docs.ssccs.org/philosophy/">philosophy</a>. The model validation is actively materializing by our open project ecosystem powered by <a href="http://docs.ssccs.org/projects/nexus">neXus</a>.
       </p>
 
       <BrowserOnly fallback={<div style={{ height: "540px" }}></div>}>
