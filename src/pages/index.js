@@ -59,8 +59,7 @@ export default function Home() {
       />
 
       <p>
-        SSCCS (Schema–Segment Composition Computing System) is an observation‑driven computing model that redefines computation as the
-        collapse of structured potential. Immutable Segments arranged by
+        SSCCS (Schema–Segment Composition Computing System) is an observation‑driven computing model grounded in the epistemology of possible worlds, redefining computation as the collapse of structured potential. Immutable Segments arranged by
         Schemes, projected through Fields under their dynamic constraints and
         Observation. State or data is the result of the projection, and time is
         one of coordinates. Therefore parallelism and verifiability emerge naturally from structure, have near-linear scalability and energy consumption.
